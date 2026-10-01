@@ -1,243 +1,148 @@
-'use client'
-
-import { useState } from 'react'
 import {
   ArrowDownRight,
   ArrowRight,
-  Cable,
-  Check,
-  ChevronRight,
+  ArrowUpRight,
+  BadgeCheck,
   Clock3,
+  Droplets,
   Factory,
+  Gauge,
   MapPin,
-  Menu,
   PackageCheck,
   Phone,
   ShieldCheck,
   Wrench,
-  X,
+  Zap,
 } from 'lucide-react'
 
 const services = [
-  {
-    number: '01',
-    icon: Cable,
-    title: 'Flexibles & composants',
-    description:
-      'Tuyaux, raccords et adaptateurs haute pression conçus pour les contraintes des mines, carrières et sites industriels.',
-    detail: 'Pression adaptée à votre installation, jusqu'à 600 bars selon référence.',
-  },
-  {
-    number: '02',
-    icon: Factory,
-    title: 'Atelier sur votre site',
-    description:
-      'Un atelier complet, équipé et opéré dans vos installations, avec une équipe Macken Pices dédiée et des composants critiques à demeure.',
-    detail: 'Lorsque le dispositif est déployé : intervention en moins de 30 minutes.',
-    featured: true,
-  },
-  {
-    number: '03',
-    icon: Wrench,
-    title: 'Audit & maintenance',
-    description:
-      'Nous repérons les points de défaillance de vos circuits hydrauliques et préparons un plan de maintenance adapté à votre exploitation.',
-    detail: 'Rapport documenté et recommandations priorisées.',
-  },
-  {
-    number: '04',
-    icon: PackageCheck,
-    title: 'Stock à demeure',
-    description:
-      'Les références critiques sont sélectionnées selon vos besoins et stockées directement sur votre site pour limiter les délais d'approvisionnement.',
-    detail: 'La bonne pièce, là où votre équipe en a besoin.',
-  },
+  { number: '01', title: 'Flexibles & raccords', description: 'Tuyaux et composants haute pression, sélectionnés selon votre installation et tracés de bout en bout.', detail: 'Jusqu’à 600 bars selon référence', icon: Gauge },
+  { number: '02', title: 'Atelier sur votre site', description: 'Un atelier équipé, un stock de composants critiques et une équipe Macken Pices dédiée, directement dans vos installations.', detail: 'Équipe d’astreinte 24/7', icon: Wrench },
+  { number: '03', title: 'Audit & maintenance', description: 'Nous évaluons vos circuits, repérons les risques et organisons un plan de maintenance adapté à vos opérations.', detail: 'Rapport documenté', icon: ShieldCheck },
+  { number: '04', title: 'Stock à demeure', description: 'Les références critiques sont déjà sur place, dimensionnées à partir de vos consommations réelles.', detail: 'Lubumbashi & Kolwezi', icon: PackageCheck },
 ]
 
-const navigation = [
-  { label: 'Nos solutions', href: '#solutions' },
-  { label: 'Notre méthode', href: '#engagements' },
-  { label: 'Zone d'intervention', href: '#implantation' },
-  { label: 'Références', href: '#references' },
+const guarantees = [
+  { title: 'Moins de 30 minutes', description: 'Démarrage de l’intervention sur arrêt non planifié, lorsque atelier, équipe et stock sont déployés sur votre site.', icon: Zap },
+  { title: 'Disponibilité 24/7', description: 'Y compris les nuits, les week-ends et les jours fériés.', icon: Clock3 },
+  { title: 'Traçabilité documentée', description: 'Composants conformes aux standards et documentation fournie.', icon: BadgeCheck },
 ]
+
+function BrandMark({ light = false }: { light?: boolean }) {
+  return (
+    <a className={`brand${light ? ' brand-light' : ''}`} href="#accueil" aria-label="Macken Pices, accueil">
+      <span className="brand-mark" aria-hidden="true"><Droplets size={23} strokeWidth={2.2} /></span>
+      <span className="brand-copy"><strong>MACKEN PICES</strong><span>ENGINEERING · CONSTRUCTION</span></span>
+    </a>
+  )
+}
 
 export function HydraulicsLanding() {
-  const [menuOpen, setMenuOpen] = useState(false)
-
   return (
-    <main className="hydraulics-page">
-      <div className="urgency-bar">
-        <span className="urgency-dot" aria-hidden="true" />
-        <span>Urgence hydraulique — disponibilité 24/7</span>
-        <span className="urgency-separator" aria-hidden="true">·</span>
+    <main>
+      <div className="emergency-strip">
+        <span className="availability-dot" aria-hidden="true" />
+        <span>Assistance hydraulique, jour et nuit</span>
+        <span className="strip-divider" aria-hidden="true">/</span>
         <a href="tel:+243975146361">+243 975 146 361</a>
+        <span className="strip-location">Lubumbashi · Kolwezi</span>
       </div>
 
       <header className="site-header">
         <div className="header-inner">
-          <a className="brand" href="#accueil" aria-label="Macken Pices — accueil">
-            <span className="brand-mark" aria-hidden="true"><Wrench size={23} strokeWidth={2.1} /></span>
-            <span className="brand-copy">
-              <strong>MACKEN PICES</strong>
-              <small>ENGINEERING · CONSTRUCTION</small>
-            </span>
-          </a>
-
-          <button
-            className="menu-toggle"
-            type="button"
-            aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
-            aria-expanded={menuOpen}
-            aria-controls="main-navigation"
-            onClick={() => setMenuOpen((open) => !open)}
-          >
-            {menuOpen ? <X size={23} /> : <Menu size={23} />}
-          </button>
-
-          <nav id="main-navigation" className={`main-nav${menuOpen ? ' is-open' : ''}`} aria-label="Navigation principale">
-            {navigation.map((item) => (
-              <a href={item.href} key={item.href} onClick={() => setMenuOpen(false)}>{item.label}</a>
-            ))}
-            <a className="nav-contact" href="#contact" onClick={() => setMenuOpen(false)}>
-              Nous contacter <ArrowRight size={15} aria-hidden="true" />
-            </a>
+          <BrandMark />
+          <nav className="primary-nav" aria-label="Navigation principale">
+            <a href="#solutions">Solutions</a>
+            <a href="#engagements">Nos engagements</a>
+            <a href="#references">Références</a>
+            <a className="nav-contact" href="#contact">Parlons de votre site <ArrowUpRight size={15} /></a>
           </nav>
         </div>
       </header>
 
-      <section className="hero" id="accueil" aria-labelledby="hero-title">
-        <div className="hero-photo" aria-hidden="true" />
-        <div className="hero-shade" aria-hidden="true" />
-        <div className="hero-inner">
-          <div className="hero-copy">
-            <p className="eyebrow"><span /> Hydraulique industrielle · Grand Katanga</p>
-            <h1 id="hero-title">Votre production ne peut pas <em>s'arrêter.</em></h1>
-            <p className="hero-lead">
-              Nous déployons un atelier hydraulique au cœur de votre exploitation — avec l'équipe, l'outillage et les pièces pour intervenir quand chaque minute compte.
-            </p>
-            <div className="hero-actions">
-              <a className="button button-yellow" href="tel:+243975146361">
-                <Phone size={17} aria-hidden="true" /> Appeler l'urgence 24/7
-              </a>
-              <a className="button button-outline" href="#solutions">Découvrir nos solutions <ArrowDownRight size={16} aria-hidden="true" /></a>
-            </div>
-            <p className="hero-coverage"><MapPin size={15} aria-hidden="true" /> Lubumbashi · Kolwezi · Haut-Katanga · Lualaba</p>
+      <section className="hero-section" id="accueil" aria-labelledby="hero-heading">
+        <div className="hero-image" role="img" aria-label="Technicien hydraulique en intervention dans un atelier minier" />
+        <div className="hero-grain" aria-hidden="true" />
+        <div className="hero-content">
+          <p className="eyebrow hero-eyebrow"><span /> Ingénierie hydraulique · Grand Katanga</p>
+          <h1 id="hero-heading">Moins d’arrêts.<br /><span>Plus de maîtrise.</span></h1>
+          <p className="hero-description">Des solutions hydrauliques pensées pour les réalités de votre exploitation minière et industrielle.</p>
+          <div className="hero-actions">
+            <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appeler l’astreinte 24/7</a>
+            <a className="button button-outline" href="#solutions">Découvrir nos solutions <ArrowDownRight size={17} /></a>
           </div>
-          <aside className="hero-assurance" aria-label="Notre engagement de disponibilité">
-            <div className="assurance-icon"><Clock3 size={21} aria-hidden="true" /></div>
-            <div>
-              <span className="assurance-label">Disponibilité contractuelle</span>
-              <strong>24<span>/</span>7</strong>
-              <p>Une équipe d'astreinte, jour et nuit, selon le périmètre convenu.</p>
-            </div>
-            <a href="#engagements" aria-label="En savoir plus sur nos engagements"><ChevronRight size={18} /></a>
-          </aside>
+          <div className="hero-footnote"><MapPin size={15} /> Lubumbashi, Kolwezi et sites miniers en RDC</div>
         </div>
-        <div className="hero-index" aria-hidden="true">01 <span /> HYDRAULIQUE</div>
+        <aside className="hero-callout" aria-label="Engagement d’intervention">
+          <span className="callout-icon"><Zap size={17} fill="currentColor" /></span>
+          <div><strong>&lt; 30 min</strong><span>sur site équipé d’un atelier</span></div>
+          <ArrowUpRight className="callout-arrow" size={19} />
+        </aside>
+        <div className="hero-index" aria-hidden="true">MP / 01</div>
       </section>
 
-      <section className="proof-strip" aria-label="Nos engagements clés">
-        <div className="proof-item"><ShieldCheck size={21} aria-hidden="true" /><span><strong>Présence sur site</strong><small>Atelier intégré à votre exploitation</small></span></div>
-        <div className="proof-item"><Clock3 size={21} aria-hidden="true" /><span><strong>Disponibilité 24/7</strong><small>Contractuellement garantie</small></span></div>
-        <div className="proof-item"><PackageCheck size={21} aria-hidden="true" /><span><strong>Stock critique</strong><small>Références disponibles sur place</small></span></div>
-        <div className="proof-item"><MapPin size={21} aria-hidden="true" /><span><strong>Grand Katanga</strong><small>Lubumbashi & Kolwezi</small></span></div>
+      <section className="intro-band" aria-label="Présentation de Macken Pices">
+        <div className="intro-inner">
+          <div className="intro-heading"><span className="section-kicker">LA CONTINUITÉ, CONCRÈTEMENT</span><h2>Votre partenaire<br />hydraulique de terrain.</h2></div>
+          <p>Nous assemblons, testons et maintenons vos composants hydrauliques avec une priorité : garder vos équipements en mouvement. Atelier, équipe et pièces peuvent être réunis au plus près de vos opérations.</p>
+          <div className="intro-stat"><span className="stat-number">24<span>/7</span></span><span className="stat-label">Une équipe d’astreinte,<br />quand vous en avez besoin.</span></div>
+        </div>
       </section>
 
-      <section className="solutions section-pad" id="solutions" aria-labelledby="solutions-title">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow eyebrow-dark">Ce que nous faisons</p>
-            <h2 id="solutions-title">Une réponse complète,<br /><em>au plus près du terrain.</em></h2>
-          </div>
-          <p className="section-intro">Nous ne faisons pas que fournir des composants. Nous prenons en charge la continuité de votre production, du flexible à l'accompagnement sur site.</p>
-        </div>
+      <section className="solutions-section section-wrap" id="solutions" aria-labelledby="solutions-heading">
+        <div className="section-topline"><span>01 — NOS SOLUTIONS</span><span>Conçues pour le terrain</span></div>
+        <div className="section-heading-row"><div><p className="section-kicker">DE LA PIÈCE À LA PRÉSENCE SUR SITE</p><h2 id="solutions-heading">Une réponse à chaque<br />point de friction.</h2></div><p className="section-summary">Un dispositif ajusté à vos équipements, vos contraintes opérationnelles et au niveau de service attendu.</p></div>
         <div className="service-grid">
-          {services.map(({ number, icon: Icon, title, description, detail, featured }) => (
-            <article className={`service-card${featured ? ' service-featured' : ''}`} key={number}>
-              <div className="service-topline"><span className="service-icon"><Icon size={21} aria-hidden="true" /></span><span className="service-number">{number}</span></div>
-              <h3>{title}</h3>
-              <p>{description}</p>
-              <div className="service-detail"><Check size={15} aria-hidden="true" /><span>{detail}</span></div>
+          {services.map(({ number, title, description, detail, icon: Icon }) => (
+            <article className="service-card" key={number}>
+              <div className="service-card-top"><span>{number}</span><Icon size={21} strokeWidth={1.8} /></div>
+              <h3>{title}</h3><p>{description}</p>
+              <div className="service-detail"><span />{detail}</div>
             </article>
           ))}
         </div>
-        <div className="solutions-footnote"><span className="footnote-line" /> Une même équipe. Un seul responsable : Macken Pices.</div>
+        <div className="process-strip"><div className="process-icon"><Factory size={21} /></div><p><strong>Un seul responsable : nous.</strong> Atelier dédié sur votre site, complété par nos ateliers de Lubumbashi et Kolwezi.</p><a href="#contact" aria-label="Contacter Macken Pices"><ArrowRight size={20} /></a></div>
       </section>
 
-      <section className="engagements section-pad" id="engagements" aria-labelledby="engagement-title">
-        <div className="engagement-visual">
-          <div className="visual-panel">
-            <span className="visual-overline">DE LA PANNE À LA PRÉVENTION</span>
-            <div className="process-step"><span>01</span><div><strong>Évaluer</strong><small>Vos équipements & besoins réels</small></div></div>
-            <div className="process-rule" />
-            <div className="process-step"><span>02</span><div><strong>Installer</strong><small>Atelier, outillage & stock critique</small></div></div>
-            <div className="process-rule" />
-            <div className="process-step"><span>03</span><div><strong>Accompagner</strong><small>Astreinte et maintenance continue</small></div></div>
-            <div className="visual-note"><Clock3 size={18} aria-hidden="true" /><span><strong>Moins de 30 min</strong><small>Lorsque atelier et stock sont déployés sur votre site</small></span></div>
+      <section className="commitment-section" id="engagements" aria-labelledby="commitments-heading">
+        <div className="commitment-layout section-wrap">
+          <div className="commitment-copy">
+            <div className="section-topline section-topline-light"><span>02 — NOS ENGAGEMENTS</span><span>La promesse, avec son périmètre</span></div>
+            <p className="section-kicker">UN DISPOSITIF QUI SE PROUVE</p>
+            <h2 id="commitments-heading">De la réactivité.<br /><span>Sans raccourci.</span></h2>
+            <p className="commitment-description">Le délai dépend du dispositif en place. Sur un site équipé de notre atelier, l’équipe, l’outillage et le stock sont déjà à vos côtés. Hors site équipé, nous convenons du délai d’intervention depuis Lubumbashi ou Kolwezi.</p>
+            <a className="commitment-link" href="#contact">Échanger sur votre exploitation <ArrowRight size={16} /></a>
           </div>
-          <div className="visual-caption">UNE ORGANISATION PENSÉE POUR VOTRE SITE</div>
-        </div>
-        <div className="engagement-copy">
-          <p className="eyebrow eyebrow-dark">Notre méthode</p>
-          <h2 id="engagement-title">La bonne pièce.<br /><em>Au bon endroit.</em></h2>
-          <p className="engagement-intro">Un arrêt de production se prépare avant la panne. Nos équipes structurent avec vous le dispositif adapté à vos opérations et à vos équipements.</p>
-          <ul className="engagement-list">
-            <li><Check size={17} /><span><strong>Un atelier dédié sur votre site</strong><small>Installé et opéré par du personnel Macken Pices.</small></span></li>
-            <li><Check size={17} /><span><strong>Des pièces critiques à demeure</strong><small>Un stock construit selon vos références et consommations.</small></span></li>
-            <li><Check size={17} /><span><strong>Une maintenance documentée</strong><small>Audits, recommandations priorisées et suivi préventif.</small></span></li>
-          </ul>
-          <a className="text-link" href="#contact">Parlons de votre site <ArrowRight size={16} /></a>
-        </div>
-      </section>
-
-      <section className="locations section-pad" id="implantation" aria-labelledby="locations-title">
-        <div className="locations-heading">
-          <p className="eyebrow">Ancrés dans la région</p>
-          <h2 id="locations-title">Au cœur du <em>Grand Katanga.</em></h2>
-          <p>Nos ateliers de Lubumbashi et Kolwezi soutiennent vos opérations dans le Haut-Katanga et le Lualaba.</p>
-        </div>
-        <div className="location-cards">
-          <article className="location-card"><span className="location-pin"><MapPin size={19} /></span><div><small>ATELIER & INTERVENTIONS</small><h3>Lubumbashi</h3><p>Haut-Katanga · RDC</p></div><span className="location-no">01</span></article>
-          <article className="location-card"><span className="location-pin"><MapPin size={19} /></span><div><small>ATELIER & INTERVENTIONS</small><h3>Kolwezi</h3><p>Lualaba · RDC</p></div><span className="location-no">02</span></article>
-        </div>
-      </section>
-
-      <section className="references section-pad" id="references" aria-labelledby="references-title">
-        <div className="references-intro">
-          <p className="eyebrow eyebrow-dark">Ils nous font confiance</p>
-          <h2 id="references-title">Des partenaires de terrain.<br /><em>Des opérations exigeantes.</em></h2>
-          <p>Des acteurs miniers et industriels du Grand Katanga nous confient leurs besoins en approvisionnement, maintenance critique et assemblage de flexibles.</p>
-        </div>
-        <div className="reference-list" aria-label="Quelques références">
-          <div className="reference-name"><span>01</span><strong>Kamoa Copper SA</strong><small>Partenaire depuis 2016</small></div>
-          <div className="reference-name"><span>02</span><strong>KCS DRC</strong><small>Partenaire depuis 2015</small></div>
-          <div className="reference-name"><span>03</span><strong>Mining Solution Group</strong><small>Partenaire depuis 2019</small></div>
-        </div>
-      </section>
-
-      <section className="contact-section" id="contact" aria-labelledby="contact-title">
-        <div className="contact-inner">
-          <div>
-            <p className="eyebrow">Besoin d'une réponse rapide ?</p>
-            <h2 id="contact-title">Parlons de votre<br /><em>prochaine intervention.</em></h2>
-            <p>Notre équipe est disponible 24/7 pour les urgences hydrauliques à Lubumbashi, Kolwezi et dans les zones d'intervention couvertes.</p>
+          <div className="commitment-list">
+            {guarantees.map(({ title, description, icon: Icon }, index) => (
+              <article className="guarantee-row" key={title}><span className="guarantee-number">0{index + 1}</span><span className="guarantee-icon"><Icon size={19} /></span><div><h3>{title}</h3><p>{description}</p></div></article>
+            ))}
+            <div className="response-note"><span className="availability-dot" /> Astreinte hydraulique active 24/7</div>
           </div>
-          <div className="contact-action">
-            <a className="button button-yellow button-large" href="tel:+243975146361"><Phone size={18} /> Appeler maintenant</a>
-            <a className="contact-number" href="tel:+243975146361">+243 975 146 361</a>
-            <span><Clock3 size={14} /> Disponibilité 24/7 contractuellement garantie</span>
+        </div>
+      </section>
+
+      <section className="references-section section-wrap" id="references" aria-labelledby="references-heading">
+        <div className="section-topline"><span>03 — ILS NOUS FONT CONFIANCE</span><span>Industrie & mines · Grand Katanga</span></div>
+        <div className="references-heading-row"><div><p className="section-kicker">UNE CONFIANCE CONSTRUITE SUR LE TERRAIN</p><h2 id="references-heading">Aux côtés des acteurs<br />qui font avancer la région.</h2></div><p>Des partenariats durables pour l’approvisionnement, l’assemblage et la maintenance de composants hydrauliques.</p></div>
+        <div className="client-list" aria-label="Références clients"><div><span>KAMOA COPPER SA</span><small>Partenaire depuis 2016</small></div><div><span>KCS DRC</span><small>Partenaire depuis 2015</small></div><div><span>MINING SOLUTION GROUP</span><small>Partenaire depuis 2019</small></div></div>
+      </section>
+
+      <section className="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div className="contact-inner section-wrap">
+          <div className="contact-copy"><p className="section-kicker">VOTRE PROCHAINE ÉTAPE</p><h2 id="contact-heading">Parlons de votre<br />exploitation.</h2><p>Une urgence, un besoin en flexibles ou un projet de maintenance ? Notre équipe est à votre écoute.</p><a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> +243 975 146 361</a></div>
+          <div className="contact-details">
+            <div><MapPin size={18} /><span><strong>Présence locale</strong><small>Lubumbashi & Kolwezi · RDC</small></span></div>
+            <div><Clock3 size={18} /><span><strong>Urgence hydraulique</strong><small>Disponible 24 heures sur 24, 7 jours sur 7</small></span></div>
+            <div><Wrench size={18} /><span><strong>Besoin d’un devis ?</strong><small>Appelez-nous pour décrire votre installation et vos contraintes.</small></span></div>
           </div>
+          <span className="contact-watermark" aria-hidden="true">MP.</span>
         </div>
       </section>
 
       <footer className="site-footer">
-        <a className="brand brand-footer" href="#accueil" aria-label="Macken Pices — retour en haut">
-          <span className="brand-mark" aria-hidden="true"><Wrench size={21} /></span>
-          <span className="brand-copy"><strong>MACKEN PICES</strong><small>ENGINEERING · CONSTRUCTION</small></span>
-        </a>
-        <p>Hydraulique industrielle · Lubumbashi & Kolwezi</p>
-        <a href="tel:+243975146361">+243 975 146 361 <ArrowRight size={14} /></a>
-        <small className="copyright">© {new Date().getFullYear()} MACKEN PICES S.A.R.L.</small>
+        <div className="footer-inner"><BrandMark light /><p>Solutions hydrauliques industrielles<br />République Démocratique du Congo</p><a href="#accueil">Retour en haut <ArrowUpRight size={14} /></a></div>
+        <div className="footer-bottom"><span>© {new Date().getFullYear()} Macken Pices S.A.R.L.</span><span>Engineering · Construction</span></div>
       </footer>
     </main>
   )
