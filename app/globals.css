@@ -201,6 +201,7 @@ main { overflow: hidden; }
 .hero-eyebrow { display: flex; align-items: center; gap: 10px; color: #d6e1e3; }
 .hero-eyebrow > span { width: 23px; height: 2px; background: var(--yellow); }
 .hero-content h1 { margin: 0; font-size: clamp(45px, 6.3vw, 78px); font-weight: 650; letter-spacing: -.055em; line-height: .99; }
+.hero-content h1.hero-heading-urgent { font-size: clamp(40px, 5.1vw, 62px); line-height: 1.04; }
 .hero-content h1 span { color: var(--yellow); }
 .hero-description { max-width: 480px; margin: 23px 0 25px; color: #d0dce1; font-size: 15px; line-height: 1.75; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
@@ -308,6 +309,7 @@ main { overflow: hidden; }
   .hero-section::before { background: linear-gradient(90deg,rgba(8,25,37,.91),rgba(8,25,37,.63)),linear-gradient(0deg,rgba(8,25,37,.74),transparent 72%); }
   .hero-content { width: 90%; margin-left: 6%; padding: 77px 0 145px; }
   .hero-content h1 { font-size: clamp(47px, 12vw, 66px); }
+  .hero-content h1.hero-heading-urgent { font-size: clamp(39px, 9.5vw, 52px); }
   .hero-description { max-width: 370px; font-size: 13px; }
   .hero-actions { align-items: flex-start; flex-direction: column; }
   .button { min-height: 45px; }
