@@ -193,8 +193,8 @@ main { overflow: hidden; }
 .primary-nav a:hover { color: #18829a; }
 .primary-nav .nav-contact { display: inline-flex; align-items: center; gap: 8px; padding: 12px 16px; border: 1px solid #d5dfe3; color: var(--navy); }
 .hero-section { position: relative; min-height: 590px; display: flex; align-items: center; background: #0a1d29; color: #fff; isolation: isolate; }
-.hero-image { position: absolute; inset: 0; z-index: -3; background: url('/hydraulics-hero.png') center 48% / cover no-repeat; }
-.hero-section::before { content: ''; position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg,rgba(8,25,37,.96) 0%,rgba(8,25,37,.84) 39%,rgba(8,25,37,.28) 73%,rgba(8,25,37,.12) 100%),linear-gradient(0deg,rgba(8,25,37,.42),transparent 38%); }
+.hero-image { position: absolute; inset: 0; z-index: -3; background: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/zone-atelier%20%282%29-pcieeqKdlRRoO3svGOCvevffMMInrb.jpg') 58% 48% / cover no-repeat; filter: brightness(.84) saturate(.82); }
+.hero-section::before { content: ''; position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg,rgba(8,25,37,.94) 0%,rgba(8,25,37,.78) 39%,rgba(8,25,37,.36) 73%,rgba(8,25,37,.24) 100%),linear-gradient(0deg,rgba(8,25,37,.46),transparent 44%); }
 .hero-grain { position: absolute; z-index: -1; inset: 0; pointer-events: none; opacity: .16; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E"); }
 .hero-content { width: min(650px, 70%); margin-left: max(7%, calc((100vw - 1120px) / 2)); padding: 72px 0 100px; }
 .eyebrow,.section-kicker { margin: 0 0 16px; color: #397e91; font-size: 10px; font-weight: 700; letter-spacing: .16em; line-height: 1.6; text-transform: uppercase; }
@@ -304,8 +304,8 @@ main { overflow: hidden; }
   .primary-nav a { font-size: 9px; }
   .primary-nav .nav-contact { gap: 4px; padding: 7px 8px; }
   .hero-section { min-height: 620px; align-items: flex-start; }
-  .hero-image { background-position: 59% center; }
-  .hero-section::before { background: linear-gradient(90deg,rgba(8,25,37,.91),rgba(8,25,37,.6)),linear-gradient(0deg,rgba(8,25,37,.7),transparent 72%); }
+  .hero-image { background-position: 66% center; }
+  .hero-section::before { background: linear-gradient(90deg,rgba(8,25,37,.91),rgba(8,25,37,.63)),linear-gradient(0deg,rgba(8,25,37,.74),transparent 72%); }
   .hero-content { width: 90%; margin-left: 6%; padding: 77px 0 145px; }
   .hero-content h1 { font-size: clamp(47px, 12vw, 66px); }
   .hero-description { max-width: 370px; font-size: 13px; }
