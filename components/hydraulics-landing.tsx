@@ -66,7 +66,7 @@ export function HydraulicsLanding() {
         <div className="hero-content">
           <p className="eyebrow hero-eyebrow"><span /> Ingénierie hydraulique · Grand Katanga</p>
           <h1 id="hero-heading" className="hero-heading-urgent">Arrêt hydraulique ?<br />Nous intervenons en <span>moins de 30 min</span>, votre production repart.</h1>
-          <p className="hero-description">Des solutions pensées pour les réalités de votre exploitation industrielle.</p>
+          <p className="hero-description">Des solutions sur mesure, pensées pour votre exploitation et vos opérateurs.</p>
           <div className="hero-actions">
             <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appeler l’astreinte 24/7</a>
             <a className="button button-outline" href="#solutions">Découvrir nos solutions <ArrowDownRight size={17} /></a>
