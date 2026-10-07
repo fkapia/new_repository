@@ -83,9 +83,15 @@ export function HydraulicsLanding() {
 
       <section className="intro-band" aria-label="Présentation de Macken Pices">
         <div className="intro-inner">
-          <div className="intro-heading"><span className="section-kicker">LA CONTINUITÉ, CONCRÈTEMENT</span><h2>Votre partenaire<br />hydraulique de terrain.</h2></div>
-          <p>Nous assemblons, testons et maintenons vos composants hydrauliques avec une priorité : garder vos équipements en mouvement. Atelier, équipe et pièces peuvent être réunis au plus près de vos opérations.</p>
-          <div className="intro-stat"><span className="stat-number">24<span>/7</span></span><span className="stat-label">Une équipe d’astreinte,<br />quand vous en avez besoin.</span></div>
+          <div className="intro-copy">
+            <div className="intro-heading"><span className="section-kicker">LA CONTINUITÉ, CONCRÈTEMENT</span><h2>Votre partenaire<br />hydraulique de terrain.</h2></div>
+            <p>Nous assemblons, testons et maintenons vos composants hydrauliques avec une priorité : garder vos équipements en mouvement. Atelier, équipe et pièces peuvent être réunis au plus près de vos opérations.</p>
+            <a className="intro-next" href="#solutions">Découvrir nos solutions <ArrowRight size={16} /></a>
+          </div>
+          <aside className="intro-stat" aria-label="Astreinte et délai d’intervention, sous condition d’un atelier sur site">
+            <span className="stat-number">24<span>/7</span></span>
+            <div className="stat-copy"><strong>Astreinte et intervention en moins de 30 min</strong><span>Sur les sites équipés d’un atelier.</span></div>
+          </aside>
         </div>
       </section>
 
