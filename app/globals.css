@@ -262,22 +262,27 @@ main { overflow: hidden; }
 .process-strip > a { width: 36px; height: 36px; flex: 0 0 auto; display: grid; place-items: center; color: #FFCC00; border: 1px solid #FFFFFF70; transition: background .2s, color .2s; }
 .process-strip > a:hover { background: #FFCC00; color: #003366; }
 .process-strip > a:focus-visible { outline-color: #FFCC00; }
-.commitment-section { background: #003366; color: #FFFFFF; }
-.commitment-layout { min-height: 448px; padding: 60px 0 67px; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; }
-.commitment-copy .section-topline { margin-bottom: 45px; }
-.section-topline-light { border-color: #ffffff26; color: #FFFFFF; }
-.commitment-copy > .section-kicker { color: #FFFFFF; }
-.commitment-copy h2 { margin: 0; color: #fff; font-size: clamp(39px, 4.6vw, 56px); font-weight: 600; letter-spacing: -.06em; line-height: 1.04; }
-.commitment-copy h2 span { color: var(--yellow); }
-.commitment-description { max-width: 465px; margin: 19px 0 20px; color: #FFFFFF; font-size: 12px; line-height: 1.8; }
-.commitment-link { display: inline-flex; align-items: center; gap: 10px; color: var(--yellow); font-size: 11px; font-weight: 700; text-decoration: none; }
-.commitment-list { padding-top: 60px; }
-.guarantee-row { padding: 19px 0; display: grid; grid-template-columns: 27px 39px 1fr; align-items: start; gap: 15px; border-bottom: 1px solid #ffffff20; }
-.guarantee-number { padding-top: 3px; color: #FFFFFF; font-size: 9px; letter-spacing: .1em; }
-.guarantee-icon { width: 36px; height: 36px; display: grid; place-items: center; color: var(--yellow); border: 1px solid #ffffff35; }
-.guarantee-row h3 { margin: 0 0 6px; color: #fff; font-size: 14px; }
-.guarantee-row p { margin: 0; color: #FFFFFF; font-size: 10px; line-height: 1.65; }
-.response-note { margin-top: 19px; display: flex; align-items: center; gap: 10px; color: #FFFFFF; font-size: 10px; }
+.commitment-section { position: relative; background: #003366; color: #FFFFFF; }
+.commitment-section::before { content: ''; position: absolute; top: 0; left: 50%; width: min(1120px, 88%); height: 2px; background: linear-gradient(90deg,#FFCC00 0 54px,#FFFFFF30 54px 100%); transform: translateX(-50%); }
+.commitment-layout { min-height: 448px; padding: 52px 0 58px; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(48px,7vw,88px); }
+.commitment-copy .section-topline { margin-bottom: 29px; }
+.section-topline-light { border-color: #ffffff35; color: #FFFFFF; }
+.commitment-copy > .section-kicker { margin-bottom: 9px; color: #FFFFFF; }
+.commitment-copy h2 { margin: 0; color: #fff; font-size: clamp(39px, 4.6vw, 56px); font-weight: 650; letter-spacing: -.06em; line-height: 1.04; }
+.commitment-copy h2 span { color: #FFCC00; }
+.commitment-description { max-width: 465px; margin: 17px 0 20px; color: #FFFFFF; font-size: 13px; line-height: 1.75; }
+.commitment-link { display: inline-flex; align-items: center; gap: 10px; color: #FFCC00; font-size: 11px; font-weight: 700; text-decoration: none; }
+.commitment-link:focus-visible { outline-color: #FFCC00; }
+.commitment-list { padding-top: 51px; }
+.guarantee-row { padding: 17px 0; display: grid; grid-template-columns: 27px 39px 1fr; align-items: start; gap: 15px; border-bottom: 1px solid #ffffff30; }
+.guarantee-number { padding-top: 3px; color: #FFFFFF; font-size: 10px; letter-spacing: .1em; }
+.guarantee-icon { width: 36px; height: 36px; display: grid; place-items: center; color: #FFCC00; border: 1px solid #ffffff50; }
+.guarantee-row h3 { margin: 0 0 7px; color: #fff; font-size: 15px; }
+.guarantee-row p { margin: 0; color: #FFFFFF; font-size: 11px; line-height: 1.65; }
+.response-note { margin-top: 17px; padding: 13px 15px; display: flex; align-items: flex-start; gap: 11px; border-left: 3px solid #FFCC00; background: #FFFFFF12; color: #FFFFFF; }
+.response-note > span:last-child { display: grid; gap: 4px; }
+.response-note strong { color: #FFFFFF; font-size: 11px; }
+.response-note small { color: #FFFFFF; font-size: 10px; line-height: 1.55; }
 .references-section { padding: 78px 0 83px; }
 .references-heading-row { align-items: flex-end; }
 .references-heading-row > p { max-width: 310px; margin: 0 0 3px; color: #53565A; font-size: 12px; line-height: 1.8; }
@@ -381,7 +386,7 @@ main { overflow: hidden; }
   .commitment-description { font-size: 11px; }
   .commitment-list { padding-top: 0; }
   .guarantee-row { grid-template-columns: 20px 35px 1fr; gap: 11px; }
-  .guarantee-row p { font-size: 9px; }
+  .guarantee-row p { font-size: 10px; }
   .client-list { grid-template-columns: 1fr; }
   .client-list > div { min-height: 73px; padding: 13px 18px; border-right: 1px solid #E8EDF1; border-bottom: 1px solid #E8EDF1; border-left: 1px solid #E8EDF1; }
   .client-list > div:last-child { border-bottom: 0; }

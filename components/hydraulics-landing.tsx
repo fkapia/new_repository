@@ -23,7 +23,7 @@ const services = [
 ]
 
 const guarantees = [
-  { title: 'Moins de 30 minutes', description: 'Démarrage de l’intervention sur arrêt non planifié, lorsque atelier, équipe et stock sont déployés sur votre site.', icon: Zap },
+  { title: 'Démarrage en moins de 30 minutes', description: 'Sur les sites équipés de notre atelier, avec équipe et stock déjà sur place.', icon: Zap },
   { title: 'Disponibilité 24/7', description: 'Sur les sites équipés d’un atelier, nuits, week-ends et jours fériés inclus.', icon: Clock3 },
   { title: 'Traçabilité documentée', description: 'Composants conformes aux standards et documentation fournie.', icon: BadgeCheck },
 ]
@@ -116,14 +116,14 @@ export function HydraulicsLanding() {
             <div className="section-topline section-topline-light"><span>02 — NOS ENGAGEMENTS</span><span>La promesse, avec son périmètre</span></div>
             <p className="section-kicker">UN DISPOSITIF QUI SE PROUVE</p>
             <h2 id="commitments-heading">De la réactivité.<br /><span>Sans raccourci.</span></h2>
-            <p className="commitment-description">Le délai dépend du dispositif en place. Sur un site équipé de notre atelier, l’équipe, l’outillage et le stock sont déjà à vos côtés. Hors site équipé, nous convenons du délai d’intervention depuis Lubumbashi ou Kolwezi.</p>
+            <p className="commitment-description">Le délai dépend du dispositif en place. Sur un site équipé de notre atelier, l’équipe, l’outillage et le stock sont déjà à vos côtés pour démarrer l’intervention en moins de 30 minutes. Pour les autres sites, nous convenons du délai d’intervention depuis Lubumbashi ou Kolwezi.</p>
             <a className="commitment-link" href="#contact">Échanger sur votre exploitation <ArrowRight size={16} /></a>
           </div>
           <div className="commitment-list">
             {guarantees.map(({ title, description, icon: Icon }, index) => (
               <article className="guarantee-row" key={title}><span className="guarantee-number">0{index + 1}</span><span className="guarantee-icon"><Icon size={19} /></span><div><h3>{title}</h3><p>{description}</p></div></article>
             ))}
-            <div className="response-note"><span className="availability-dot" /> Astreinte hydraulique active 24/7</div>
+            <div className="response-note"><span className="availability-dot" /><span><strong>Condition des engagements</strong><small>Le délai de moins de 30 minutes et l’astreinte 24/7 s’appliquent uniquement sur les sites équipés d’un atelier.</small></span></div>
           </div>
         </div>
       </section>
