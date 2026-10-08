@@ -17,14 +17,14 @@ import {
 
 const services = [
   { number: '01', title: 'Flexibles & raccords', description: 'Tuyaux et composants haute pression, sélectionnés selon votre installation et tracés de bout en bout.', detail: 'Jusqu’à 600 bars selon référence', icon: Gauge },
-  { number: '02', title: 'Atelier sur votre site', description: 'Un atelier équipé, un stock de composants critiques et une équipe Macken Pices dédiée, directement dans vos installations.', detail: 'Équipe d’astreinte 24/7', icon: Wrench },
+  { number: '02', title: 'Atelier sur votre site', description: 'Un atelier équipé, un stock de composants critiques et une équipe Macken Pices dédiée, directement dans vos installations.', detail: 'Astreinte 24/7 sur site équipé', icon: Wrench },
   { number: '03', title: 'Audit & maintenance', description: 'Nous évaluons vos circuits, repérons les risques et organisons un plan de maintenance adapté à vos opérations.', detail: 'Rapport documenté', icon: ShieldCheck },
   { number: '04', title: 'Stock à demeure', description: 'Les références critiques sont déjà sur place, dimensionnées à partir de vos consommations réelles.', detail: 'Lubumbashi & Kolwezi', icon: PackageCheck },
 ]
 
 const guarantees = [
   { title: 'Moins de 30 minutes', description: 'Démarrage de l’intervention sur arrêt non planifié, lorsque atelier, équipe et stock sont déployés sur votre site.', icon: Zap },
-  { title: 'Disponibilité 24/7', description: 'Y compris les nuits, les week-ends et les jours fériés.', icon: Clock3 },
+  { title: 'Disponibilité 24/7', description: 'Sur les sites équipés d’un atelier, nuits, week-ends et jours fériés inclus.', icon: Clock3 },
   { title: 'Traçabilité documentée', description: 'Composants conformes aux standards et documentation fournie.', icon: BadgeCheck },
 ]
 
