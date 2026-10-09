@@ -107,7 +107,7 @@ export function ReferencesPage() {
                 <span className="reference-section-number">01</span>
                 <div><p className="reference-kicker">SUR LE TERRAIN</p><h2>Des services au cœur des opérations</h2></div>
               </div>
-              <p>Le contrat « Hydraulic Hoses Services &amp; Fittings » porte sur la fourniture et les services de flexibles hydrauliques. La prestation couvre notamment :</p>
+              <p>Le contrat « Hydraulic Hoses Services &amp; Fittings » englobe la fourniture et l’entretien technique des circuits hydrauliques. La prestation couvre notamment :</p>
               <ul className="reference-scope-list">
                 {contractScope.map((item) => <li key={item}><ShieldCheck size={18} aria-hidden="true" /><span>{item}</span></li>)}
               </ul>
