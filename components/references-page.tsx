@@ -11,11 +11,11 @@ import {
   Wrench,
 } from 'lucide-react'
 
-const contractScope = [
-  'Approvisionnement, assemblage et maintenance critique des circuits de fluides.',
-  'Installation d’ateliers de sertissage fixes ou mobiles au plus près des équipements.',
-  'Disponibilité des équipes pour contribuer à limiter les arrêts opérationnels.',
-]
+  const contractScope = [
+    'L’approvisionnement, l’assemblage des flexibles et raccords, ainsi que la maintenance critique des circuits de fluides.',
+    'Le déploiement d’ateliers de sertissage dédiés, configurés en unités fixes ou mobiles pour intervenir au plus près des infrastructures minières.',
+    "Une réactivité technique continue, assurée par des équipes d'experts prêtes à intervenir pour minimiser les arrêts de production.",
+  ]
 
 function ReferencesHeader() {
   return (
