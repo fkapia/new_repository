@@ -28,9 +28,9 @@ const guarantees = [
   { title: 'Traçabilité documentée', description: 'Composants conformes aux standards et documentation fournie.', icon: BadgeCheck },
 ]
 
-function BrandMark({ light = false }: { light?: boolean }) {
+export function BrandMark({ light = false, homeHref = '#accueil' }: { light?: boolean; homeHref?: string }) {
   return (
-    <a className={`brand${light ? ' brand-light' : ''}`} href="#accueil" aria-label="Macken Pices, accueil">
+    <a className={`brand${light ? ' brand-light' : ''}`} href={homeHref} aria-label="Macken Pices, accueil">
       <span className="brand-mark" aria-hidden="true"><Droplets size={23} strokeWidth={2.2} /></span>
       <span className="brand-copy"><strong>MACKEN PICES</strong><span>ENGINEERING · CONSTRUCTION</span></span>
     </a>
@@ -54,7 +54,7 @@ export function HydraulicsLanding() {
           <nav className="primary-nav" aria-label="Navigation principale">
             <a href="#solutions">Solutions</a>
             <a href="#engagements">Nos engagements</a>
-            <a href="#references">Références</a>
+            <a href="/references">Références</a>
             <a className="nav-contact" href="#contact">Parlons de votre site <ArrowUpRight size={15} /></a>
           </nav>
         </div>
@@ -132,6 +132,7 @@ export function HydraulicsLanding() {
         <div className="section-topline"><span>03 — ILS NOUS FONT CONFIANCE</span><span>Industrie & mines · Grand Katanga</span></div>
         <div className="references-heading-row"><div><p className="section-kicker">UNE CONFIANCE CONSTRUITE SUR LE TERRAIN</p><h2 id="references-heading">Aux côtés des acteurs<br />qui font avancer la région.</h2></div><p>Des partenariats durables pour l’approvisionnement, l’assemblage et la maintenance de composants hydrauliques.</p></div>
         <div className="client-list" aria-label="Références clients"><div><span>KAMOA COPPER SA</span><small>Partenaire depuis 2016</small></div><div><span>KCS DRC</span><small>Partenaire depuis 2015</small></div><div><span>MINING SOLUTION GROUP</span><small>Partenaire depuis 2019</small></div></div>
+        <a className="reference-detail-link" href="/references">Découvrir notre référence Kamoa Copper <ArrowRight size={15} /></a>
       </section>
 
       <section className="contact-section" id="contact" aria-labelledby="contact-heading">
