@@ -139,7 +139,7 @@ export function HydraulicsLanding() {
           <div className="contact-copy"><p className="section-kicker">VOTRE PROCHAINE ÉTAPE</p><h2 id="contact-heading">Parlons de votre<br />exploitation.</h2><p>Une urgence, un besoin en flexibles ou un projet de maintenance ? Notre équipe est à votre écoute.</p><a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> +243 975 146 361</a></div>
           <div className="contact-details">
             <div><MapPin size={18} /><span><strong>Présence locale</strong><small>Lubumbashi & Kolwezi · RDC</small></span></div>
-            <div><Clock3 size={18} /><span><strong>Urgence hydraulique</strong><small>Disponible 24 heures sur 24, 7 jours sur 7</small></span></div>
+            <div><Clock3 size={18} /><span><strong>Urgence hydraulique</strong><small>Astreinte 24/7 sur les sites équipés d’un atelier.</small></span></div>
             <div><Wrench size={18} /><span><strong>Besoin d’un devis ?</strong><small>Appelez-nous pour décrire votre installation et vos contraintes.</small></span></div>
           </div>
           <span className="contact-watermark" aria-hidden="true">MP.</span>
