@@ -89,14 +89,14 @@ export function ReferencesPage() {
           <div className="reference-story">
             <figure className="reference-figure">
               <Image
-                src="/hydraulics-hero.png"
-                alt="Technicien intervenant sur un flexible hydraulique d’un équipement minier."
-                width={1600}
-                height={900}
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/kamoa-signature-2024-wrRXQ7iTNA3ReLmrgvsglI7yxdgmZf.jpg"
+                alt="Les représentants de Kamoa Copper et de Macken Pices S.A.R.L. signent leur contrat, en présence de l’ARSP."
+                width={1000}
+                height={667}
                 priority
                 sizes="(max-width: 760px) 100vw, (max-width: 1100px) 88vw, 820px"
               />
-              <figcaption>Illustration d’une intervention hydraulique en environnement minier. Cette image ne représente pas la cérémonie de signature.</figcaption>
+              <figcaption>Signature du contrat entre Kamoa Copper et Macken Pices S.A.R.L., sous l’égide de l’ARSP.</figcaption>
             </figure>
 
             <div className="reference-prose">
