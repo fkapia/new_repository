@@ -115,7 +115,7 @@ export function ReferencesPage() {
 
               <aside className="reference-highlight">
                 <span className="reference-highlight-icon"><Wrench size={20} aria-hidden="true" /></span>
-                <p><strong>Une présence pensée pour le site.</strong> L’assemblage et la maintenance au plus près des équipements contribuent à réduire le temps d’immobilisation des machines.</p>
+                <p>Conçue sur mesure pour la mine de Kamoa-Kakula, cette présence de proximité rapproche les composants stratégiques des zones d’extraction. L’objectif : réduire de manière significative le temps d’immobilisation des engins.</p>
               </aside>
 
               <div className="reference-section-heading">
