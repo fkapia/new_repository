@@ -53,7 +53,7 @@ export function HydraulicsLanding() {
           <BrandMark />
           <nav className="primary-nav" aria-label="Navigation principale">
             <a href="#solutions">Solutions</a>
-            <a href="#engagements">Nos engagements</a>
+            <a href="/engagements">Nos engagements</a>
             <a href="/references">Références</a>
             <a className="nav-contact" href="#contact">Parlons de votre site <ArrowUpRight size={15} /></a>
           </nav>
@@ -117,7 +117,7 @@ export function HydraulicsLanding() {
             <p className="section-kicker">UN DISPOSITIF QUI SE PROUVE</p>
             <h2 id="commitments-heading">De la réactivité.<br /><span>Sans raccourci.</span></h2>
             <p className="commitment-description">Le délai dépend du dispositif en place. Sur un site équipé de notre atelier, l’équipe, l’outillage et le stock sont déjà à vos côtés pour démarrer l’intervention en moins de 30 minutes. Pour les autres sites, nous convenons du délai d’intervention depuis Lubumbashi ou Kolwezi.</p>
-            <a className="commitment-link" href="#contact">Échanger sur votre exploitation <ArrowRight size={16} /></a>
+            <a className="commitment-link" href="/engagements">Voir nos engagements détaillés <ArrowRight size={16} /></a>
           </div>
           <div className="commitment-list">
             {guarantees.map(({ title, description, icon: Icon }, index) => (

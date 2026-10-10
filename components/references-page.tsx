@@ -35,7 +35,7 @@ function ReferencesHeader() {
           </Link>
           <nav className="primary-nav" aria-label="Navigation principale">
             <Link href="/#solutions">Solutions</Link>
-            <Link href="/#engagements">Nos engagements</Link>
+            <Link href="/engagements">Nos engagements</Link>
             <Link href="/references" aria-current="page">Références</Link>
             <Link className="nav-contact" href="/#contact">Parlons de votre site <ArrowUpRight size={15} /></Link>
           </nav>
