@@ -15,10 +15,10 @@ import {
 } from 'lucide-react'
 
 const services = [
-  { number: '01', title: 'Flexibles & raccords', description: 'Tuyaux et composants haute pression, sélectionnés selon votre installation et tracés de bout en bout.', detail: 'Jusqu’à 600 bars selon référence', icon: Gauge },
-  { number: '02', title: 'Atelier sur votre site', description: 'Un atelier équipé, un stock de composants critiques et une équipe Macken Pices dédiée, directement dans vos installations.', detail: 'Astreinte 24/7 sur site équipé', icon: Wrench },
-  { number: '03', title: 'Audit & maintenance', description: 'Nous évaluons vos circuits, repérons les risques et organisons un plan de maintenance adapté à vos opérations.', detail: 'Rapport documenté', icon: ShieldCheck },
-  { number: '04', title: 'Stock à demeure', description: 'Les références critiques sont déjà sur place, dimensionnées à partir de vos consommations réelles.', detail: 'Lubumbashi & Kolwezi', icon: PackageCheck },
+  { number: '01', category: 'ÉQUIPEMENTS', title: 'Flexibles & raccords', description: 'Tuyaux et composants haute pression sélectionnés selon votre installation, avec une traçabilité de bout en bout.', detail: 'Jusqu’à 600 bars selon référence', icon: Gauge },
+  { number: '02', category: 'PROXIMITÉ', title: 'Atelier sur votre site', description: 'Un atelier équipé, un stock de composants critiques et une équipe Macken Pices dédiée, directement dans vos installations.', detail: 'Astreinte 24/7 sur site équipé', icon: Wrench },
+  { number: '03', category: 'PRÉVENTION', title: 'Audit & maintenance', description: 'Nous évaluons vos circuits, repérons les risques et organisons un plan de maintenance adapté à vos opérations.', detail: 'Rapport documenté', icon: ShieldCheck },
+  { number: '04', category: 'DISPONIBILITÉ', title: 'Stock à demeure', description: 'Les références critiques sont déjà sur place, dimensionnées à partir de vos consommations réelles.', detail: 'Lubumbashi & Kolwezi', icon: PackageCheck },
 ]
 
 const guarantees = [
@@ -93,15 +93,16 @@ export function HydraulicsLanding() {
         <div className="section-topline"><span>01 — NOS SOLUTIONS</span><span>Conçues pour le terrain</span></div>
         <div className="section-heading-row"><div><p className="section-kicker">DE LA PIÈCE À LA PRÉSENCE SUR SITE</p><h2 id="solutions-heading">Une réponse à chaque<br />point de friction.</h2></div><p className="section-summary">Un dispositif ajusté à vos équipements, vos contraintes opérationnelles et au niveau de service attendu.</p></div>
         <div className="service-grid">
-          {services.map(({ number, title, description, detail, icon: Icon }) => (
+          {services.map(({ number, category, title, description, detail, icon: Icon }) => (
             <article className="service-card" key={number}>
-              <div className="service-card-top"><span>{number}</span><Icon size={21} strokeWidth={1.8} /></div>
-              <h3>{title}</h3><p>{description}</p>
-              <div className="service-detail"><span />{detail}</div>
+              <div className="service-card-top"><div className="service-card-label"><span className="service-number">{number}</span><span className="service-category">{category}</span></div><Icon size={22} strokeWidth={1.7} aria-hidden="true" /></div>
+              <h3>{title}</h3>
+              <p>{description}</p>
+              <div className="service-card-footer"><div className="service-detail"><span aria-hidden="true" />{detail}</div><a className="service-action" href="#contact" aria-label={`Discuter de votre besoin : ${title}`}>Discuter de ce besoin <ArrowRight size={16} aria-hidden="true" /></a></div>
             </article>
           ))}
         </div>
-        <div className="process-strip"><div className="process-icon"><Factory size={21} /></div><p><strong>Un seul responsable : nous.</strong> Atelier dédié sur votre site, complété par nos ateliers de Lubumbashi et Kolwezi.</p><a href="#contact" aria-label="Contacter Macken Pices"><ArrowRight size={20} /></a></div>
+        <div className="process-strip"><div className="process-icon"><Factory size={21} /></div><p><strong>Un seul responsable : nous.</strong> Atelier dédié sur votre site, complété par nos ateliers de Lubumbashi et Kolwezi.</p><a href="#contact">Parlons de votre site <ArrowRight size={17} aria-hidden="true" /></a></div>
       </section>
 
       <section className="commitment-section" id="engagements" aria-labelledby="commitments-heading">
