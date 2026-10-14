@@ -7,7 +7,6 @@ import {
   CalendarDays,
   Check,
   Clock3,
-  Droplets,
   Factory,
   MapPin,
   Phone,

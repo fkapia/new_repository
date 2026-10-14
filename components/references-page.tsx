@@ -4,7 +4,6 @@ import {
   ArrowRight,
   ArrowUpRight,
   CalendarDays,
-  Droplets,
   MapPin,
   Phone,
   ShieldCheck,
@@ -30,7 +29,6 @@ function ReferencesHeader() {
       <header className="site-header">
         <div className="header-inner">
           <Link className="brand" href="/" aria-label="Macken Pices SARL, accueil">
-            <span className="brand-mark" aria-hidden="true"><Droplets size={23} strokeWidth={2.2} /></span>
             <span className="brand-copy"><strong>MACKEN PICES SARL</strong><span>ENGINEERING – CONSTRUCTION</span></span>
           </Link>
           <nav className="primary-nav" aria-label="Navigation principale">
@@ -50,7 +48,6 @@ function ReferencesFooter() {
     <footer className="site-footer">
       <div className="footer-inner">
         <Link className="brand brand-light" href="/" aria-label="Macken Pices SARL, accueil">
-          <span className="brand-mark" aria-hidden="true"><Droplets size={21} strokeWidth={2.2} /></span>
           <span className="brand-copy"><strong>MACKEN PICES SARL</strong><span>ENGINEERING – CONSTRUCTION</span></span>
         </Link>
         <p>Solutions hydrauliques industrielles<br />République Démocratique du Congo</p>
