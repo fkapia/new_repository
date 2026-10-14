@@ -235,8 +235,9 @@ main { overflow: hidden; }
 .stat-copy > span { padding-top: 8px; display: block; border-top: 1px solid #FFFFFF60; color: #FFFFFF; font-size: 11px; font-weight: 500; line-height: 1.45; }
 .section-wrap { max-width: 1120px; margin: auto; }
 .solutions-section { position: relative; padding: 46px 0 68px; }
-.solutions-section::before { content: ''; position: absolute; top: 0; left: 50%; width: min(1120px, 88%); height: 1px; background: linear-gradient(90deg,#FFCC00 0 54px,#E8EDF1 54px 100%); transform: translateX(-50%); }
-.section-topline { padding-bottom: 13px; display: flex; justify-content: space-between; gap: 20px; border-bottom: 1px solid #E8EDF1; color: #53565A; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .solutions-section::before { content: none; }
+  .section-topline { padding-bottom: 13px; display: flex; justify-content: space-between; gap: 20px; border-bottom: 1px solid #E8EDF1; color: #53565A; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .solutions-section > .section-topline { padding-bottom: 0; border-bottom: 0; }
 .section-topline > span:first-child { color: #003366; }
 .section-heading-row,.references-heading-row { margin: 29px 0 27px; display: flex; align-items: flex-end; justify-content: space-between; gap: 45px; }
 .section-heading-row .section-kicker,.references-heading-row .section-kicker { margin-bottom: 10px; color: #003366; }
