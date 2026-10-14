@@ -62,20 +62,16 @@ export function HydraulicsLanding() {
         <div className="hero-image" role="img" aria-label="Technicien hydraulique en intervention dans un atelier minier" />
         <div className="hero-grain" aria-hidden="true" />
         <div className="hero-content">
-          <p className="eyebrow hero-eyebrow"><span /> Ingénierie industrielle</p>
+          <p className="eyebrow hero-eyebrow"><span /> Ingénierie & Maintenance industrielle</p>
           <h1 id="hero-heading" className="hero-heading-urgent">Arrêt hydraulique ?<br />Nous intervenons en <span>moins de 30 min</span>, votre production repart.</h1>
-          <p className="hero-description">Des solutions sur mesure, pensées pour votre exploitation.</p>
+          <p className="hero-description">Des solutions sur mesure et une logistique de proximité pensées pour sécuriser votre exploitation.</p>
           <div className="hero-actions">
             <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appeler l’astreinte 24/7</a>
             <a className="button button-outline" href="#solutions">Découvrir nos solutions <ArrowDownRight size={17} /></a>
           </div>
           <div className="hero-footnote"><MapPin size={15} /> Lubumbashi, Kolwezi et sites miniers en RDC</div>
         </div>
-        <aside className="hero-callout" aria-label="Condition du délai d’intervention annoncé dans le titre">
-          <span className="callout-icon"><Zap size={17} fill="currentColor" /></span>
-          <div><strong>&lt; 30 min</strong><span>Selon l’infrastructure déployée sur site</span></div>
-          <ArrowUpRight className="callout-arrow" size={19} />
-        </aside>
+
         <div className="hero-index" aria-hidden="true">MP / 01</div>
       </section>
 

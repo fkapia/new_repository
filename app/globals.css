@@ -214,12 +214,7 @@ main { overflow: hidden; }
 .button-outline:hover { background: #ffffff12; }
 .hero-footnote { margin-top: 26px; display: flex; align-items: center; gap: 8px; color: #FFFFFF; font-size: 11px; }
 .hero-footnote svg { color: var(--yellow); }
-.hero-callout { position: absolute; right: max(7%, calc((100vw - 1120px) / 2)); bottom: 34px; min-width: 280px; padding: 17px 19px; display: flex; align-items: center; gap: 13px; background: #fff; color: var(--ink); box-shadow: 0 14px 45px #081b2870; }
-.callout-icon { width: 38px; height: 38px; display: grid; place-items: center; color: #1A1A1A; background: var(--yellow); }
-.hero-callout div { display: grid; gap: 5px; }
-.hero-callout strong { font-size: 20px; letter-spacing: -.04em; }
-.hero-callout div span { color: #53565A; font-size: 12px; line-height: 1.35; }
-.callout-arrow { margin-left: auto; color: #53565A; }
+
 .hero-index { position: absolute; right: 24px; top: 50%; color: #ffffffa0; font-size: 9px; letter-spacing: .15em; writing-mode: vertical-rl; }
 .intro-band { position: relative; background: #FFFFFF; border-bottom: 1px solid #E8EDF1; }
 .intro-band::before { content: ''; position: absolute; top: 0; left: 50%; width: min(1120px, 88%); height: 1px; background: linear-gradient(90deg,#FFCC00 0 54px,#E8EDF1 54px 100%); transform: translateX(-50%); }
@@ -340,10 +335,6 @@ main { overflow: hidden; }
   .hero-description { margin: 10px 0 13px; font-size: 13px; line-height: 1.5; }
   .button { min-height: 42px; }
   .hero-footnote { margin-top: 13px; font-size: 10px; }
-  .hero-callout { top: 50%; right: 5.6%; bottom: auto; min-width: 270px; padding: 14px 15px; transform: translateY(-50%); }
-  .callout-icon { width: 34px; height: 34px; }
-  .hero-callout strong { font-size: 18px; }
-  .hero-callout div span { font-size: 11px; }
 }
 @media (max-width: 760px) {
   html { scroll-padding-top: 20px; }
@@ -363,7 +354,6 @@ main { overflow: hidden; }
   .hero-description { max-width: 370px; font-size: 13px; }
   .hero-actions { align-items: flex-start; flex-direction: column; }
   .button { min-height: 45px; }
-  .hero-callout { right: 6%; bottom: 25px; min-width: 235px; padding: 13px 15px; }
   .hero-index { display: none; }
   .intro-inner { min-height: auto; margin: 0; padding: 29px 6%; grid-template-columns: minmax(0,1fr); gap: 22px; }
   .intro-copy { grid-template-columns: minmax(0,1fr); gap: 13px; }
