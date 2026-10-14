@@ -31,7 +31,7 @@ function ReferencesHeader() {
         <div className="header-inner">
           <Link className="brand" href="/" aria-label="Macken Pices SARL, accueil">
             <span className="brand-mark" aria-hidden="true"><Droplets size={23} strokeWidth={2.2} /></span>
-            <span className="brand-copy"><strong>MACKEN PICES SARL</strong><span>ENGINEERING · CONSTRUCTION</span></span>
+            <span className="brand-copy"><strong>MACKEN PICES SARL</strong><span>ENGINEERING – CONSTRUCTION</span></span>
           </Link>
           <nav className="primary-nav" aria-label="Navigation principale">
             <Link href="/#solutions">Solutions</Link>
@@ -51,7 +51,7 @@ function ReferencesFooter() {
       <div className="footer-inner">
         <Link className="brand brand-light" href="/" aria-label="Macken Pices SARL, accueil">
           <span className="brand-mark" aria-hidden="true"><Droplets size={21} strokeWidth={2.2} /></span>
-          <span className="brand-copy"><strong>MACKEN PICES SARL</strong><span>ENGINEERING · CONSTRUCTION</span></span>
+          <span className="brand-copy"><strong>MACKEN PICES SARL</strong><span>ENGINEERING – CONSTRUCTION</span></span>
         </Link>
         <p>Solutions hydrauliques industrielles<br />République Démocratique du Congo</p>
         <Link href="#page-top">Retour en haut <ArrowUpRight size={14} /></Link>

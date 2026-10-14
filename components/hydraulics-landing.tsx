@@ -32,7 +32,7 @@ export function BrandMark({ light = false, homeHref = '#accueil' }: { light?: bo
   return (
     <a className={`brand${light ? ' brand-light' : ''}`} href={homeHref} aria-label="Macken Pices SARL, accueil">
       <span className="brand-mark" aria-hidden="true"><Droplets size={23} strokeWidth={2.2} /></span>
-      <span className="brand-copy"><strong>MACKEN PICES SARL</strong><span>ENGINEERING · CONSTRUCTION</span></span>
+      <span className="brand-copy"><strong>MACKEN PICES SARL</strong><span>ENGINEERING – CONSTRUCTION</span></span>
     </a>
   )
 }

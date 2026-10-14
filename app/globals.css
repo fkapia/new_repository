@@ -188,7 +188,8 @@ main { overflow: hidden; }
 .brand-copy { display: grid; gap: 4px; }
 .brand-copy strong { color: #003366; font-size: 15px; font-weight: 700; letter-spacing: .085em; line-height: 1; }
 .brand-light .brand-copy strong { color: #fff; }
-.brand-copy > span { color: #53565A; font-size: 8px; letter-spacing: .16em; }
+.brand-copy > span { color: #3399CC; font-size: 8px; letter-spacing: .16em; }
+  .brand-light .brand-copy > span { color: #3399CC; }
 .primary-nav { display: flex; align-items: center; justify-content: flex-end; gap: clamp(16px, 2.5vw, 35px); }
 .primary-nav a { color: #1A1A1A; text-decoration: none; font-size: 12px; font-weight: 600; white-space: nowrap; transition: color .2s; }
 .primary-nav a:hover { color: #3399CC; }
