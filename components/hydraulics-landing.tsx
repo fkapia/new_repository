@@ -111,7 +111,7 @@ export function HydraulicsLanding() {
             <div className="section-topline section-topline-light"><span>02 — NOS ENGAGEMENTS</span><span>La promesse, avec son périmètre</span></div>
             <p className="section-kicker">UN DISPOSITIF QUI SE PROUVE</p>
             <h2 id="commitments-heading">De la réactivité.<br /><span>Sans raccourci.</span></h2>
-            <p className="commitment-description">Le délai d’intervention dépend du contrat et de l’infrastructure déployée sur votre site. Lorsque le contrat et les moyens en place le prévoient — atelier, équipe, outillage et stock — nous pouvons démarrer l’intervention en moins de 30 minutes. Pour les autres configurations, le délai est convenu selon votre dispositif et notre organisation depuis Lubumbashi ou Kolwezi.</p>
+            <p className="commitment-description">Dans l’industrie minière, chaque minute d’arrêt machine génère des pertes exponentielles. Pour y répondre, nous adaptons notre réactivité à votre infrastructure :<br /><strong>Dispositif In-Situ :</strong> Nos techniciens et pièces d’usure sont intégrés à votre exploitation. Diagnostic et réparation s&apos;enclenchent en moins de 30 minutes.<br /><strong>Couverture Régionale :</strong> Pour les sites partenaires hors-contrat, nos hubs de Lubumbashi et Kolwezi planifient et valident une intervention rapide selon un protocole logistique strict.</p>
             <a className="commitment-link" href="/engagements">Voir nos engagements détaillés <ArrowRight size={16} /></a>
           </div>
           <div className="commitment-list">
