@@ -73,7 +73,7 @@ export function HydraulicsLanding() {
         </div>
         <aside className="hero-callout" aria-label="Condition du délai d’intervention annoncé dans le titre">
           <span className="callout-icon"><Zap size={17} fill="currentColor" /></span>
-          <div><strong>&lt; 30 min</strong><span>Selon le contrat et l’infrastructure déployée sur site</span></div>
+          <div><strong>&lt; 30 min</strong><span>Selon l’infrastructure déployée sur site</span></div>
           <ArrowUpRight className="callout-arrow" size={19} />
         </aside>
         <div className="hero-index" aria-hidden="true">MP / 01</div>
