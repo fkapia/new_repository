@@ -63,7 +63,7 @@ export function HydraulicsLanding() {
         <div className="hero-grain" aria-hidden="true" />
         <div className="hero-content">
           <p className="eyebrow hero-eyebrow"><span /> Ingénierie industrielle</p>
-          <h1 id="hero-heading" className="hero-heading-urgent">Arrêt hydraulique ?<br />Nous intervenons en <span>moins de 30 min*</span>.</h1>
+          <h1 id="hero-heading" className="hero-heading-urgent">Arrêt hydraulique ?<br />Nous intervenons en <span>moins de 30 min</span>, votre production repart.</h1>
           <p className="hero-description">Des solutions sur mesure, pensées pour votre exploitation.</p>
           <div className="hero-actions">
             <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appeler l’astreinte 24/7</a>
