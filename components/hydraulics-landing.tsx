@@ -63,7 +63,7 @@ export function HydraulicsLanding() {
         <div className="hero-grain" aria-hidden="true" />
         <div className="hero-content">
           <p className="eyebrow hero-eyebrow"><span /> Ingénierie industrielle</p>
-          <h1 id="hero-heading" className="hero-heading-urgent">Arrêt hydraulique ?<br />Nous intervenons en <span>moins de 30 min</span>, votre production repart.</h1>
+          <h1 id="hero-heading" className="hero-heading-urgent">Arrêt hydraulique ?<br />Nous intervenons en <span>moins de 30 min*</span>.</h1>
           <p className="hero-description">Des solutions sur mesure, pensées pour votre exploitation.</p>
           <div className="hero-actions">
             <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appeler l’astreinte 24/7</a>
@@ -71,9 +71,9 @@ export function HydraulicsLanding() {
           </div>
           <div className="hero-footnote"><MapPin size={15} /> Lubumbashi, Kolwezi et sites miniers en RDC</div>
         </div>
-        <aside className="hero-callout" aria-label="Engagement d’intervention">
+        <aside className="hero-callout" aria-label="Condition du délai d’intervention annoncé dans le titre">
           <span className="callout-icon"><Zap size={17} fill="currentColor" /></span>
-          <div><strong>&lt; 30 min</strong><span>Sur un site équipé d’un atelier</span></div>
+          <div><strong>&lt; 30 min</strong><span>Selon le contrat et l’infrastructure déployée sur site</span></div>
           <ArrowUpRight className="callout-arrow" size={19} />
         </aside>
         <div className="hero-index" aria-hidden="true">MP / 01</div>
@@ -86,9 +86,9 @@ export function HydraulicsLanding() {
             <p>Nous assemblons, testons et maintenons vos composants hydrauliques avec une priorité : garder vos équipements en mouvement. Atelier, équipe et pièces peuvent être réunis au plus près de vos opérations.</p>
             <a className="intro-next" href="#solutions">Découvrir nos solutions <ArrowRight size={16} /></a>
           </div>
-          <aside className="intro-stat" aria-label="Astreinte et délai d’intervention, sous condition d’un atelier sur site">
+          <aside className="intro-stat" aria-label="Astreinte et délai d’intervention selon le contrat et l’infrastructure du site">
             <span className="stat-number">24<span>/7</span></span>
-            <div className="stat-copy"><strong>Astreinte et intervention en moins de 30 min</strong><span>Sur les sites équipés d’un atelier.</span></div>
+            <div className="stat-copy"><strong>Astreinte et délai d’intervention adaptés à votre dispositif</strong><span>Moins de 30 min selon le contrat et l’infrastructure déployée.</span></div>
           </aside>
         </div>
       </section>
@@ -114,14 +114,14 @@ export function HydraulicsLanding() {
             <div className="section-topline section-topline-light"><span>02 — NOS ENGAGEMENTS</span><span>La promesse, avec son périmètre</span></div>
             <p className="section-kicker">UN DISPOSITIF QUI SE PROUVE</p>
             <h2 id="commitments-heading">De la réactivité.<br /><span>Sans raccourci.</span></h2>
-            <p className="commitment-description">Le délai dépend du dispositif en place. Sur un site équipé de notre atelier, l’équipe, l’outillage et le stock sont déjà à vos côtés pour démarrer l’intervention en moins de 30 minutes. Pour les autres sites, nous convenons du délai d’intervention depuis Lubumbashi ou Kolwezi.</p>
+            <p className="commitment-description">Le délai d’intervention dépend du contrat et de l’infrastructure déployée sur votre site. Lorsque le contrat et les moyens en place le prévoient — atelier, équipe, outillage et stock — nous pouvons démarrer l’intervention en moins de 30 minutes. Pour les autres configurations, le délai est convenu selon votre dispositif et notre organisation depuis Lubumbashi ou Kolwezi.</p>
             <a className="commitment-link" href="/engagements">Voir nos engagements détaillés <ArrowRight size={16} /></a>
           </div>
           <div className="commitment-list">
             {guarantees.map(({ title, description, icon: Icon }, index) => (
               <article className="guarantee-row" key={title}><span className="guarantee-number">0{index + 1}</span><span className="guarantee-icon"><Icon size={19} /></span><div><h3>{title}</h3><p>{description}</p></div></article>
             ))}
-            <div className="response-note"><span className="availability-dot" /><span><strong>Condition des engagements</strong><small>Le délai de moins de 30 minutes et l’astreinte 24/7 s’appliquent uniquement sur les sites équipés d’un atelier.</small></span></div>
+            <div className="response-note"><span className="availability-dot" /><span><strong>Conditions des engagements</strong><small>Le délai de moins de 30 minutes dépend du contrat et de l’infrastructure déployée sur site. L’astreinte 24/7 s’applique selon les conditions prévues au contrat.</small></span></div>
           </div>
         </div>
       </section>
