@@ -62,9 +62,9 @@ export function HydraulicsLanding() {
         <div className="hero-image" role="img" aria-label="Technicien hydraulique en intervention dans un atelier minier" />
         <div className="hero-grain" aria-hidden="true" />
         <div className="hero-content">
-          <p className="eyebrow hero-eyebrow"><span /> Ingénierie · Grand Katanga</p>
+          <p className="eyebrow hero-eyebrow"><span /> Ingénierie industrielle</p>
           <h1 id="hero-heading" className="hero-heading-urgent">Arrêt hydraulique ?<br />Nous intervenons en <span>moins de 30 min</span>, votre production repart.</h1>
-          <p className="hero-description">Des solutions sur mesure, pensées pour votre exploitation et vos opérateurs.</p>
+          <p className="hero-description">Des solutions sur mesure, pensées pour votre exploitation.</p>
           <div className="hero-actions">
             <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appeler l’astreinte 24/7</a>
             <a className="button button-outline" href="#solutions">Découvrir nos solutions <ArrowDownRight size={17} /></a>
