@@ -82,9 +82,9 @@ export function HydraulicsLanding() {
             <p>Nous assemblons, testons et maintenons vos composants hydrauliques avec une priorité : garder vos équipements en mouvement. Atelier, équipe et pièces peuvent être réunis au plus près de vos opérations.</p>
             <a className="intro-next" href="#solutions">Découvrir nos solutions <ArrowRight size={16} /></a>
           </div>
-          <aside className="intro-stat" aria-label="Astreinte et délai d’intervention selon le contrat et l’infrastructure du site">
+          <aside className="intro-stat" aria-label="Astreinte et délai d’intervention adaptés à votre infrastructure">
             <span className="stat-number">24<span>/7</span></span>
-            <div className="stat-copy"><strong>Astreinte et délai d’intervention adaptés à votre dispositif</strong><span>Moins de 30 min selon le contrat et l’infrastructure déployée.</span></div>
+            <div className="stat-copy"><strong>Astreinte et délai d’intervention adaptés à votre infrastructure.</strong></div>
           </aside>
         </div>
       </section>
