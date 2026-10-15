@@ -140,7 +140,7 @@ export function HydraulicsLanding() {
           <div className="contact-details">
             <div><MapPin size={18} /><span><strong>Présence locale</strong><small>Lubumbashi & Kolwezi · RDC</small></span></div>
             <div><Clock3 size={18} /><span><strong>Urgence hydraulique</strong><small>Astreinte 24/7 sur les sites équipés d’un atelier.</small></span></div>
-            <div><Wrench size={18} /><span><strong>Besoin d’un devis ?</strong><small>Appelez-nous pour d��crire votre installation et vos contraintes.</small></span></div>
+            <div><Wrench size={18} /><span><strong>Besoin d’un devis ?</strong><small>Appelez-nous pour décrire votre installation et vos contraintes.</small></span></div>
           </div>
           <span className="contact-watermark" aria-hidden="true">MP.</span>
         </div>
