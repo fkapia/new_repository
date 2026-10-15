@@ -128,7 +128,7 @@ export function HydraulicsLanding() {
       </section>
 
       <section className="references-section section-wrap" id="references" aria-labelledby="references-heading">
-        <div className="section-topline"><span>03 — ILS NOUS FONT CONFIANCE</span><span>Industrie & mines · Grand Katanga</span></div>
+        <div className="section-topline"><span>ILS NOUS FONT CONFIANCE</span><span>Industrie & mines · Grand Katanga</span></div>
         <div className="references-heading-row"><div><p className="section-kicker">UNE CONFIANCE CONSTRUITE SUR LE TERRAIN</p><h2 id="references-heading">Aux côtés des acteurs<br />qui font avancer la région.</h2></div><p>Des partenariats durables pour l’approvisionnement, l’assemblage et la maintenance de composants hydrauliques.</p></div>
         <div className="client-list" aria-label="Références clients"><div><span>KAMOA COPPER SA</span><small>Partenaire depuis 2016</small></div><div><span>KCS DRC</span><small>Partenaire depuis 2015</small></div><div><span>MINING SOLUTION GROUP</span><small>Partenaire depuis 2019</small></div></div>
         <a className="reference-detail-link" href="/references">Découvrir notre référence Kamoa Copper <ArrowRight size={15} /></a>
