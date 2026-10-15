@@ -7,6 +7,7 @@ import {
   Factory,
   Gauge,
   MapPin,
+  MessageCircle,
   PackageCheck,
   Phone,
   ShieldCheck,
@@ -38,7 +39,7 @@ export function HydraulicsLanding() {
         <span className="strip-divider" aria-hidden="true">/</span>
         <a href="tel:+243975146361">+243 975 146 361</a>
         <span className="strip-divider" aria-hidden="true">·</span>
-        <a className="strip-whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">WhatsApp</a>
+        <a className="strip-whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={12} aria-hidden="true" /> WhatsApp</a>
         <span className="strip-location">Lubumbashi · Kolwezi</span>
       </div>
 
@@ -63,7 +64,7 @@ export function HydraulicsLanding() {
           <p className="hero-description">Des solutions sur mesure et une logistique de proximité pensées pour garantir la continuité de votre exploitation.</p>
           <div className="hero-actions">
             <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appeler l’astreinte 24/7</a>
-            <a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">Écrire sur WhatsApp</a>
+            <a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={15} aria-hidden="true" /> WhatsApp</a>
             <a className="button button-outline" href="#solutions">Découvrir nos solutions <ArrowDownRight size={17} /></a>
           </div>
           <div className="hero-footnote"><MapPin size={15} /> Lubumbashi, Kolwezi et sites miniers en RDC</div>
@@ -139,7 +140,7 @@ export function HydraulicsLanding() {
 
       <section className="contact-section" id="contact" aria-labelledby="contact-heading">
         <div className="contact-inner section-wrap">
-          <div className="contact-copy"><p className="section-kicker">VOTRE PROCHAINE ÉTAPE</p><h2 id="contact-heading">Parlons de votre<br />exploitation.</h2><p>Une urgence, un besoin en flexibles ou un projet de maintenance ? Notre équipe est à votre écoute.</p><a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> +243 975 146 361</a><a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">Écrire sur WhatsApp</a></div>
+          <div className="contact-copy"><p className="section-kicker">VOTRE PROCHAINE ÉTAPE</p><h2 id="contact-heading">Parlons de votre<br />exploitation.</h2><p>Une urgence, un besoin en flexibles ou un projet de maintenance ? Notre équipe est à votre écoute.</p><a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> +243 975 146 361</a><a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={15} aria-hidden="true" /> WhatsApp</a></div>
           <div className="contact-details">
             <div><MapPin size={18} /><span><strong>Présence locale</strong><small>Lubumbashi & Kolwezi · RDC</small></span></div>
             <div><Clock3 size={18} /><span><strong>Urgence hydraulique</strong><small>Astreinte 24/7 sur les sites équipés d’un atelier.</small></span></div>

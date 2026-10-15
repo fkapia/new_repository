@@ -9,6 +9,7 @@ import {
   FileCheck2,
   Gauge,
   MapPin,
+  MessageCircle,
   Phone,
   ShieldCheck,
 } from 'lucide-react'
@@ -145,7 +146,7 @@ function EngagementsHeader() {
         <span className="strip-divider" aria-hidden="true">/</span>
         <a href="tel:+243975146361">+243 975 146 361</a>
         <span className="strip-divider" aria-hidden="true">·</span>
-        <a className="strip-whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">WhatsApp</a>
+        <a className="strip-whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={12} aria-hidden="true" /> WhatsApp</a>
         <span className="strip-location">Lubumbashi · Kolwezi</span>
       </div>
       <header className="site-header">
@@ -188,7 +189,7 @@ function EngagementHero() {
           <div className="engagement-hero-actions">
             <Link className="button button-yellow" href="/#contact">Demander un devis <ArrowRight size={16} /></Link>
             <a className="button button-outline" href="tel:+243975146361"><Phone size={16} /> Urgence 24/7 : +243 975 146 361</a>
-            <a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">Écrire sur WhatsApp</a>
+            <a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={15} aria-hidden="true" /> WhatsApp</a>
           </div>
         </div>
         <span className="engagement-hero-index" aria-hidden="true">MP / QUALITÉ</span>
@@ -314,7 +315,7 @@ function EmergencySection() {
           <strong className="engagement-emergency-number">24<span>/7</span></strong>
           <p className="engagement-emergency-copy">Une assistance hydraulique joignable de jour comme de nuit, 7 jours sur 7.</p>
           <a href="tel:+243975146361" className="engagement-emergency-phone"><Phone size={17} aria-hidden="true" /> +243 975 146 361</a>
-          <a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">Écrire sur WhatsApp</a>
+          <a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={15} aria-hidden="true" /> WhatsApp</a>
           <span className="engagement-emergency-location"><MapPin size={14} aria-hidden="true" /> Lubumbashi · Kolwezi · corridor minier</span>
         </aside>
       </div>

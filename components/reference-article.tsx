@@ -9,6 +9,7 @@ import {
   Clock3,
   Factory,
   MapPin,
+  MessageCircle,
   Phone,
   ShieldCheck,
   Wrench,
@@ -40,7 +41,7 @@ function ReferenceEmergencyStrip() {
       <span className="strip-divider" aria-hidden="true">/</span>
       <a href="tel:+243975146361">+243 975 146 361</a>
       <span className="strip-divider" aria-hidden="true">·</span>
-      <a className="strip-whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">WhatsApp</a>
+      <a className="strip-whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={12} aria-hidden="true" /> WhatsApp</a>
       <span className="strip-location">Lubumbashi · Kolwezi</span>
     </div>
   )
@@ -187,7 +188,7 @@ function ReferenceCallToAction() {
     <section className="reference-cta" id="contact" aria-labelledby="reference-cta-title">
       <div className="reference-cta-inner">
         <div><p className="reference-eyebrow">VOTRE PROCHAINE ÉTAPE</p><h2 id="reference-cta-title">Parlons de votre exploitation.</h2><p>Besoin de flexibles, d'un atelier de sertissage ou d'un accompagnement maintenance ? Échangeons sur vos contraintes de site.</p></div>
-        <div className="reference-cta-actions"><Link className="reference-cta-primary" href="/#contact">Nous contacter <ArrowRight size={16} /></Link><a className="reference-cta-secondary" href="tel:+243975146361"><Phone size={16} /> +243 975 146 361</a><a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">Écrire sur WhatsApp</a></div>
+        <div className="reference-cta-actions"><Link className="reference-cta-primary" href="/#contact">Nous contacter <ArrowRight size={16} /></Link><a className="reference-cta-secondary" href="tel:+243975146361"><Phone size={16} /> +243 975 146 361</a><a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={15} aria-hidden="true" /> WhatsApp</a></div>
       </div>
     </section>
   )
