@@ -22,7 +22,7 @@ const services = [
 ]
 
 const guarantees = [
-  { title: 'Démarrage en moins de 30 minutes', description: 'Sur les sites équipés de notre atelier, avec équipe et stock déjà sur place.', icon: Zap },
+  { title: 'Intervention en moins de 30 minutes', description: 'Sur les sites équipés de notre atelier, avec équipe et stock déjà sur place.', icon: Zap },
   { title: 'Disponibilité 24/7', description: 'Sur les sites équipés d’un atelier, nuits, week-ends et jours fériés inclus.', icon: Clock3 },
   { title: 'Traçabilité documentée', description: 'Composants conformes aux standards et documentation fournie.', icon: BadgeCheck },
 ]
