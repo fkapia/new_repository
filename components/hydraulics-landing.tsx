@@ -105,7 +105,7 @@ export function HydraulicsLanding() {
       <section className="commitment-section" id="engagements" aria-labelledby="commitments-heading">
         <div className="commitment-layout section-wrap">
           <div className="commitment-copy">
-            <div className="section-topline section-topline-light"><span>02 — NOS ENGAGEMENTS</span><span>La promesse, avec son périmètre</span></div>
+            <div className="section-topline section-topline-light"><span>NOS ENGAGEMENTS</span><span>La promesse, avec son périmètre</span></div>
             <h2 id="commitments-heading">De la réactivité.<br /><span>Sans raccourci.</span></h2>
             <p className="commitment-intro">Une réponse adaptée à votre infrastructure : sur les sites équipés d’ateliers de sertissage dédié, déployé contractuellement en unité fixe ou mobile, le diagnostic et la réparation s’enclenchent en moins de 30 minutes. Pour les autres sites, l’intervention est coordonnée depuis nos bases régionales.</p>
             <a className="commitment-link" href="/engagements">Voir nos engagements détaillés <ArrowRight size={16} /></a>
