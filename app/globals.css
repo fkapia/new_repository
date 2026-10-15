@@ -227,9 +227,7 @@ main { overflow: hidden; }
   .intro-benefits li { position: relative; padding-left: 15px; }
   .intro-benefits li::before { content: ''; position: absolute; top: .62em; left: 0; width: 6px; height: 6px; background: #FFCC00; border-radius: 50%; }
   .intro-benefits strong { color: #003366; }
-  .intro-next { justify-self: start; display: inline-flex; align-items: center; gap: 8px; color: #003366; font-size: 11px; font-weight: 700; text-decoration: none; }
-.intro-next svg { color: #3399CC; transition: transform .2s; }
-.intro-next:hover svg { transform: translateX(3px); }
+
 .intro-stat { position: relative; min-height: 120px; padding: 22px 24px; display: flex; align-items: center; gap: 18px; overflow: hidden; background: #003366; color: #FFFFFF; border-left: 4px solid #FFCC00; }
 .stat-number { flex: 0 0 auto; color: #FFFFFF; font-size: clamp(44px,5vw,58px); font-weight: 700; letter-spacing: -.07em; line-height: .9; }
 .stat-number span { color: #FFCC00; font-size: 27px; letter-spacing: -.03em; }
@@ -372,7 +370,6 @@ main { overflow: hidden; }
   .intro-heading { grid-row: auto; }
   .intro-heading h2 { font-size: 25px; }
   .intro-benefits { gap: 9px; font-size: 12px; }
-  .intro-next { margin-top: 1px; }
   .intro-stat { min-height: auto; padding: 18px 16px; gap: 14px; }
   .stat-number { font-size: 46px; }
   .stat-number span { font-size: 21px; }

@@ -84,7 +84,6 @@ export function HydraulicsLanding() {
     <li><strong>Sur mesure :</strong> Interventions immédiates pensées pour vos rendements.</li>
     <li><strong>Proximité :</strong> Couverture totale depuis Lubumbashi et Kolwezi.</li>
   </ul>
-            <a className="intro-next" href="#solutions">Découvrir nos solutions <ArrowRight size={16} /></a>
           </div>
           <aside className="intro-stat" aria-label="Astreinte et délai d’intervention adaptés à votre infrastructure">
             <span className="stat-number">24<span>/7</span></span>
