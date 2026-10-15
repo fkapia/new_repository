@@ -64,7 +64,7 @@ export function HydraulicsLanding() {
         <div className="hero-content">
           <p className="eyebrow hero-eyebrow"><span /> Ingénierie & Maintenance industrielle</p>
           <h1 id="hero-heading" className="hero-heading-urgent">Arrêt hydraulique ?<br />Nous intervenons en <span>moins de 30 min</span>, votre production repart.</h1>
-          <p className="hero-description">Des solutions sur mesure et une logistique de proximité pensées pour sécuriser votre exploitation.</p>
+          <p className="hero-description">Des solutions sur mesure et une logistique de proximité pensées pour garantir la continuité de votre exploitation.</p>
           <div className="hero-actions">
             <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appeler l’astreinte 24/7</a>
             <a className="button button-outline" href="#solutions">Découvrir nos solutions <ArrowDownRight size={17} /></a>
@@ -136,7 +136,7 @@ export function HydraulicsLanding() {
           <div className="contact-details">
             <div><MapPin size={18} /><span><strong>Présence locale</strong><small>Lubumbashi & Kolwezi · RDC</small></span></div>
             <div><Clock3 size={18} /><span><strong>Urgence hydraulique</strong><small>Astreinte 24/7 sur les sites équipés d’un atelier.</small></span></div>
-            <div><Wrench size={18} /><span><strong>Besoin d’un devis ?</strong><small>Appelez-nous pour décrire votre installation et vos contraintes.</small></span></div>
+            <div><Wrench size={18} /><span><strong>Besoin d’un devis ?</strong><small>Appelez-nous pour d��crire votre installation et vos contraintes.</small></span></div>
           </div>
           <span className="contact-watermark" aria-hidden="true">MP.</span>
         </div>
