@@ -24,6 +24,8 @@ function ReferencesHeader() {
         <span>Assistance hydraulique</span>
         <span className="strip-divider" aria-hidden="true">/</span>
         <a href="tel:+243975146361">+243 975 146 361</a>
+        <span className="strip-divider" aria-hidden="true">·</span>
+        <a className="strip-whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">WhatsApp</a>
         <span className="strip-location">Lubumbashi · Kolwezi</span>
       </div>
       <header className="site-header">
@@ -173,6 +175,7 @@ export function ReferencesPage() {
           <div className="reference-cta-actions">
             <Link className="button button-yellow" href="/#contact">Parlons de votre projet <ArrowRight size={16} /></Link>
             <a className="reference-phone-link" href="tel:+243975146361"><Phone size={15} aria-hidden="true" /> +243 975 146 361</a>
+            <a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361">Écrire sur WhatsApp</a>
           </div>
         </div>
       </section>

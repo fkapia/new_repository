@@ -178,6 +178,11 @@ a { color: inherit; }
 main { overflow: hidden; }
 .emergency-strip { min-height: 35px; padding: 0 5.6%; display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--navy-deep); color: #FFFFFF; font-size: 11px; letter-spacing: .045em; }
 .emergency-strip a { color: var(--yellow); font-weight: 700; text-decoration: none; }
+.emergency-strip .strip-whatsapp-link { text-decoration: underline; text-underline-offset: 3px; }
+.whatsapp-link { display: inline-flex; width: fit-content; align-items: center; color: var(--navy); font-size: 12px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.whatsapp-link:hover { color: #3399CC; }
+.whatsapp-link:focus-visible { outline-color: #3399CC; }
+.hero-actions .whatsapp-link, .engagement-hero-actions .whatsapp-link, .reference-cta .whatsapp-link, .engagement-emergency-card .whatsapp-link { color: #FFFFFF; }
 .availability-dot { width: 7px; height: 7px; flex: 0 0 auto; border-radius: 50%; background: #FFCC00; box-shadow: 0 0 0 3px #FFCC0025; }
 .strip-divider { color: #FFFFFF80; }
 .strip-location { color: #FFFFFFB3; margin-left: 16px; }
@@ -318,6 +323,7 @@ main { overflow: hidden; }
 .contact-copy > .button-yellow { min-height: 52px; padding: 0 21px; gap: 11px; box-shadow: 0 5px 14px #00336620; }
 .contact-copy > .button-yellow:hover { background: #FFD633; box-shadow: 0 8px 20px #00336630; }
 .contact-copy > .button-yellow:focus-visible { outline-color: #003366; }
+.contact-copy > .whatsapp-link { display: flex; margin-top: 14px; }
 .contact-details { position: relative; z-index: 1; display: grid; gap: 23px; }
 .contact-details > div { display: flex; align-items: flex-start; gap: 13px; color: #3399CC; }
 .contact-details > div > span { display: grid; gap: 5px; }
