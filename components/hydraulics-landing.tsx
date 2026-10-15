@@ -99,7 +99,7 @@ export function HydraulicsLanding() {
             </article>
           ))}
         </div>
-        <div className="process-strip"><div className="process-icon"><Factory size={21} /></div><p><strong>Un seul responsable : nous.</strong> Atelier dédié sur votre site, complété par nos ateliers de Lubumbashi et Kolwezi.</p><a href="#contact">Parlons de votre site <ArrowRight size={17} aria-hidden="true" /></a></div>
+        <div className="process-strip"><div className="process-icon"><Factory size={21} /></div><p><strong>Un seul responsable : nous.</strong><br />Atelier dédié sur votre site, complété par nos ateliers de Lubumbashi et Kolwezi.</p><a href="#contact">Parlons de votre site <ArrowRight size={17} aria-hidden="true" /></a></div>
       </section>
 
       <section className="commitment-section" id="engagements" aria-labelledby="commitments-heading">
