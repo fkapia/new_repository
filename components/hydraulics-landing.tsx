@@ -120,8 +120,7 @@ export function HydraulicsLanding() {
             {guarantees.map(({ title, description, icon: Icon }, index) => (
               <article className="guarantee-row" key={title}><span className="guarantee-number">0{index + 1}</span><span className="guarantee-icon"><Icon size={19} /></span><div><h3>{title}</h3><p>{description}</p></div></article>
             ))}
-            <div className="response-note"><span className="availability-dot" /><span><strong>Conditions des engagements</strong><small>Le délai de moins de 30 minutes dépend du contrat et de l’infrastructure déployée sur site. L’astreinte 24/7 s’applique selon les conditions prévues au contrat.</small></span></div>
-          </div>
+                    </div>
         </div>
       </section>
 
