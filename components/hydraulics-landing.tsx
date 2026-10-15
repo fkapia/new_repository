@@ -34,7 +34,7 @@ export function HydraulicsLanding() {
     <main>
       <div className="emergency-strip">
         <span className="availability-dot" aria-hidden="true" />
-        <span>Assistance hydraulique, jour et nuit</span>
+        <span>Assistance hydraulique</span>
         <span className="strip-divider" aria-hidden="true">/</span>
         <a href="tel:+243975146361">+243 975 146 361</a>
         <span className="strip-location">Lubumbashi · Kolwezi</span>
