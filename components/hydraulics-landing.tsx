@@ -80,9 +80,9 @@ export function HydraulicsLanding() {
           <div className="intro-copy">
             <div className="intro-heading"><span className="section-kicker">LA CONTINUITÉ, CONCRÈTEMENT</span><h2>Votre partenaire<br />hydraulique de terrain.</h2></div>
             <ul className="intro-benefits">
-    <li><strong>In-Situ :</strong> Équipe et stock stratégique au cœur de votre exploitation.</li>
+    <li><strong>In-Situ :</strong> Équipe et stock s’installent stratégique au cœur de votre exploitation.</li>
     <li><strong>Sur mesure :</strong> Interventions immédiates pensées pour vos rendements.</li>
-    <li><strong>Proximité :</strong> Couverture totale depuis Lubumbashi et Kolwezi.</li>
+    <li><strong>Proximité :</strong> Couverture totale depuis nos bases de Lubumbashi et Kolwezi.</li>
   </ul>
           </div>
           <aside className="intro-stat" aria-label="Astreinte et délai d’intervention adaptés à votre infrastructure">
