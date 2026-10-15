@@ -93,7 +93,7 @@ export function HydraulicsLanding() {
       </section>
 
       <section className="solutions-section section-wrap" id="solutions" aria-labelledby="solutions-heading">
-        <div className="section-topline"><span>01 — NOS SOLUTIONS</span><span>Conçues pour le terrain</span></div>
+        <div className="section-topline"><span>NOS SOLUTIONS</span><span>Conçues pour le terrain</span></div>
         <div className="section-heading-row"><div><p className="section-kicker">DE LA PIÈCE À LA PRÉSENCE SUR SITE</p><h2 id="solutions-heading">Une réponse à chaque<br />point de friction.</h2></div><p className="section-summary">Un dispositif ajusté à vos équipements, vos contraintes opérationnelles et au niveau de service attendu.</p></div>
         <div className="service-grid">
           {services.map(({ number, category, title, description, detail, icon: Icon }) => (
