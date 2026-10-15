@@ -111,9 +111,9 @@ export function HydraulicsLanding() {
             <a className="commitment-link" href="/engagements">Voir nos engagements détaillés <ArrowRight size={16} /></a>
           </div>
           <div className="commitment-details">
-            <aside className="commitment-timing" aria-label="Sur un site équipé de notre atelier, diagnostic et réparation s’enclenchent en moins de 30 minutes.">
+            <aside className="commitment-timing" aria-label="Diagnostic et réparation démarrent en moins de 30 minutes sur les sites équipés de notre atelier.">
               <div className="commitment-timing-value" aria-hidden="true"><strong>30</strong><span>MIN</span></div>
-              <div className="commitment-timing-copy"><span>SUR SITE ÉQUIPÉ</span><h3>Diagnostic et réparation en moins de 30 minutes.</h3><p>Sur les sites équipés de notre atelier.</p></div>
+              <div className="commitment-timing-copy"><h3>Diagnostic et réparation démarrent en moins de 30 minutes.</h3><p>Sur les sites équipés de notre atelier.</p></div>
             </aside>
             <div className="commitment-service-grid">
               <article className="commitment-service"><Factory size={20} aria-hidden="true" /><h3>Dispositif In-Situ</h3><p>Nos techniciens et pièces d’usure sont déjà intégrés à votre exploitation.</p></article>
