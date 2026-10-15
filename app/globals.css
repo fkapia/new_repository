@@ -223,8 +223,11 @@ main { overflow: hidden; }
 .intro-heading { grid-row: span 2; }
 .intro-heading .section-kicker { margin-bottom: 12px; color: #003366; }
 .intro-heading h2 { margin: 0; color: #003366; font-size: clamp(25px,2.4vw,32px); font-weight: 700; letter-spacing: -.045em; line-height: 1.13; }
-.intro-copy > p { margin: 0; color: #1A1A1A; font-size: 13px; line-height: 1.75; }
-.intro-next { justify-self: start; display: inline-flex; align-items: center; gap: 8px; color: #003366; font-size: 11px; font-weight: 700; text-decoration: none; }
+  .intro-benefits { margin: 0; padding: 0; display: grid; gap: 10px; list-style: none; color: #1A1A1A; font-size: 13px; line-height: 1.55; }
+  .intro-benefits li { position: relative; padding-left: 15px; }
+  .intro-benefits li::before { content: ''; position: absolute; top: .62em; left: 0; width: 6px; height: 6px; background: #FFCC00; border-radius: 50%; }
+  .intro-benefits strong { color: #003366; }
+  .intro-next { justify-self: start; display: inline-flex; align-items: center; gap: 8px; color: #003366; font-size: 11px; font-weight: 700; text-decoration: none; }
 .intro-next svg { color: #3399CC; transition: transform .2s; }
 .intro-next:hover svg { transform: translateX(3px); }
 .intro-stat { position: relative; min-height: 120px; padding: 22px 24px; display: flex; align-items: center; gap: 18px; overflow: hidden; background: #003366; color: #FFFFFF; border-left: 4px solid #FFCC00; }
@@ -368,7 +371,7 @@ main { overflow: hidden; }
   .intro-copy { grid-template-columns: minmax(0,1fr); gap: 13px; }
   .intro-heading { grid-row: auto; }
   .intro-heading h2 { font-size: 25px; }
-  .intro-copy > p { font-size: 12px; }
+  .intro-benefits { gap: 9px; font-size: 12px; }
   .intro-next { margin-top: 1px; }
   .intro-stat { min-height: auto; padding: 18px 16px; gap: 14px; }
   .stat-number { font-size: 46px; }

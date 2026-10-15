@@ -79,7 +79,11 @@ export function HydraulicsLanding() {
         <div className="intro-inner">
           <div className="intro-copy">
             <div className="intro-heading"><span className="section-kicker">LA CONTINUITÉ, CONCRÈTEMENT</span><h2>Votre partenaire<br />hydraulique de terrain.</h2></div>
-            <p>Nous assemblons, testons et maintenons vos composants hydrauliques avec une priorité : garder vos équipements en mouvement. Atelier, équipe et pièces peuvent être réunis au plus près de vos opérations.</p>
+            <ul className="intro-benefits">
+    <li><strong>In-Situ :</strong> Équipe et stock stratégique au cœur de votre exploitation.</li>
+    <li><strong>Sur mesure :</strong> Interventions immédiates pensées pour vos rendements.</li>
+    <li><strong>Proximité :</strong> Couverture totale depuis Lubumbashi et Kolwezi.</li>
+  </ul>
             <a className="intro-next" href="#solutions">Découvrir nos solutions <ArrowRight size={16} /></a>
           </div>
           <aside className="intro-stat" aria-label="Astreinte et délai d’intervention adaptés à votre infrastructure">
