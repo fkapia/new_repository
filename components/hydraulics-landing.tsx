@@ -21,12 +21,6 @@ const services = [
   { number: '04', category: 'DISPONIBILITÉ', title: 'Stock à demeure', description: 'Les références critiques sont déjà sur place, dimensionnées à partir de vos consommations réelles.', detail: 'Lubumbashi & Kolwezi', icon: PackageCheck },
 ]
 
-const guarantees = [
-  { title: 'Intervention en moins de 30 minutes', description: 'Sur les sites équipés de notre atelier, avec équipe et stock déjà sur place.', icon: Zap },
-  { title: 'Disponibilité 24/7', description: 'Sur les sites équipés d’un atelier, nuits, week-ends et jours fériés inclus.', icon: Clock3 },
-  { title: 'Traçabilité documentée', description: 'Composants conformes aux standards et documentation fournie.', icon: BadgeCheck },
-]
-
 export function BrandMark({ light = false, homeHref = '#accueil' }: { light?: boolean; homeHref?: string }) {
   return (
     <a className={`brand${light ? ' brand-light' : ''}`} href={homeHref} aria-label="Macken Pices SARL, accueil">
@@ -113,14 +107,23 @@ export function HydraulicsLanding() {
           <div className="commitment-copy">
             <div className="section-topline section-topline-light"><span>02 — NOS ENGAGEMENTS</span><span>La promesse, avec son périmètre</span></div>
             <h2 id="commitments-heading">De la réactivité.<br /><span>Sans raccourci.</span></h2>
-            <p className="commitment-description">Dans l’industrie minière, chaque minute d’arrêt machine génère des pertes exponentielles. Pour y répondre, nous adaptons notre réactivité à votre infrastructure :<br /><strong>Dispositif In-Situ :</strong> Diagnostic et réparation s&apos;enclenchent en moins de 30 minutes. Nos techniciens et pièces d’usure sont déjà intégrés à votre exploitation.<br /><strong>Couverture Régionale :</strong> Nos hubs de Lubumbashi et Kolwezi planifient et valident une intervention rapide selon un protocole logistique strict.</p>
+            <p className="commitment-intro">Une réponse adaptée à votre infrastructure : présence de nos équipes sur les sites équipés ou intervention coordonnée depuis nos bases régionales.</p>
             <a className="commitment-link" href="/engagements">Voir nos engagements détaillés <ArrowRight size={16} /></a>
           </div>
-          <div className="commitment-list">
-            {guarantees.map(({ title, description, icon: Icon }, index) => (
-              <article className="guarantee-row" key={title}><span className="guarantee-number">0{index + 1}</span><span className="guarantee-icon"><Icon size={19} /></span><div><h3>{title}</h3><p>{description}</p></div></article>
-            ))}
-                    </div>
+          <div className="commitment-details">
+            <aside className="commitment-timing" aria-label="Sur un site équipé de notre atelier, diagnostic et réparation s’enclenchent en moins de 30 minutes.">
+              <div className="commitment-timing-value" aria-hidden="true"><strong>30</strong><span>MIN</span></div>
+              <div className="commitment-timing-copy"><span>SUR SITE ÉQUIPÉ</span><h3>Diagnostic et réparation en moins de 30 minutes.</h3><p>Sur les sites équipés de notre atelier.</p></div>
+            </aside>
+            <div className="commitment-service-grid">
+              <article className="commitment-service"><Factory size={20} aria-hidden="true" /><h3>Dispositif In-Situ</h3><p>Nos techniciens et pièces d’usure sont déjà intégrés à votre exploitation.</p></article>
+              <article className="commitment-service"><MapPin size={20} aria-hidden="true" /><h3>Couverture régionale</h3><p>Nos hubs de Lubumbashi et Kolwezi planifient et valident une intervention rapide selon un protocole logistique strict.</p></article>
+            </div>
+            <ul className="commitment-assurances" aria-label="Garanties complémentaires">
+              <li><Clock3 size={18} aria-hidden="true" /><span><strong>Disponibilité 24/7</strong><small>Sur les sites équipés d’un atelier.</small></span></li>
+              <li><BadgeCheck size={18} aria-hidden="true" /><span><strong>Traçabilité documentée</strong><small>Composants conformes aux standards et documentation fournie.</small></span></li>
+            </ul>
+          </div>
         </div>
       </section>
 

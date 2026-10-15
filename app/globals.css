@@ -270,25 +270,34 @@ main { overflow: hidden; }
   .process-strip > a:focus-visible { outline: 2px solid #FFCC00; outline-offset: 3px; }
 .commitment-section { position: relative; background: #003366; color: #FFFFFF; }
 .commitment-section::before { content: ''; position: absolute; top: 0; left: 50%; width: min(1120px, 88%); height: 2px; background: linear-gradient(90deg,#FFCC00 0 54px,#FFFFFF30 54px 100%); transform: translateX(-50%); }
-.commitment-layout { min-height: 448px; padding: 52px 0 58px; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(48px,7vw,88px); }
+.commitment-layout { padding: 62px 0; display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); align-items: center; gap: clamp(36px,5vw,64px); }
 .commitment-copy .section-topline { margin-bottom: 29px; }
 .section-topline-light { border-color: #ffffff35; color: #FFFFFF; }
-.commitment-copy > .section-kicker { margin-bottom: 9px; color: #FFFFFF; }
+.section-topline-light > span:first-child { color: #FFCC00; }
 .commitment-copy h2 { margin: 0; color: #fff; font-size: clamp(39px, 4.6vw, 56px); font-weight: 650; letter-spacing: -.06em; line-height: 1.04; }
 .commitment-copy h2 span { color: #FFCC00; }
-.commitment-description { max-width: 465px; margin: 17px 0 20px; color: #FFFFFF; font-size: 13px; line-height: 1.75; }
-.commitment-link { display: inline-flex; align-items: center; gap: 10px; color: #FFCC00; font-size: 11px; font-weight: 700; text-decoration: none; }
+.commitment-intro { max-width: 440px; margin: 18px 0 22px; color: #FFFFFF; font-size: 15px; line-height: 1.65; }
+.commitment-link { display: inline-flex; align-items: center; gap: 10px; color: #FFCC00; font-size: 14px; font-weight: 700; text-decoration: none; }
 .commitment-link:focus-visible { outline-color: #FFCC00; }
-.commitment-list { padding-top: 51px; }
-.guarantee-row { padding: 17px 0; display: grid; grid-template-columns: 27px 39px 1fr; align-items: start; gap: 15px; border-bottom: 1px solid #ffffff30; }
-.guarantee-number { padding-top: 3px; color: #FFFFFF; font-size: 10px; letter-spacing: .1em; }
-.guarantee-icon { width: 36px; height: 36px; display: grid; place-items: center; color: #FFCC00; border: 1px solid #ffffff50; }
-.guarantee-row h3 { margin: 0 0 7px; color: #fff; font-size: 15px; }
-.guarantee-row p { margin: 0; color: #FFFFFF; font-size: 11px; line-height: 1.65; }
-.response-note { margin-top: 17px; padding: 13px 15px; display: flex; align-items: flex-start; gap: 11px; border-left: 3px solid #FFCC00; background: #FFFFFF12; color: #FFFFFF; }
-.response-note > span:last-child { display: grid; gap: 4px; }
-.response-note strong { color: #FFFFFF; font-size: 11px; }
-.response-note small { color: #FFFFFF; font-size: 10px; line-height: 1.55; }
+.commitment-details { display: flex; flex-direction: column; gap: 14px; }
+.commitment-timing { padding: 20px 22px; display: flex; align-items: center; gap: 22px; border: 1px solid #ffffff40; background: #ffffff0d; }
+.commitment-timing-value { display: flex; flex: 0 0 auto; align-items: baseline; gap: 7px; color: #FFCC00; }
+.commitment-timing-value strong { font-size: clamp(54px,6vw,72px); font-weight: 650; letter-spacing: -.075em; line-height: .9; }
+.commitment-timing-value span { font-size: 14px; font-weight: 700; letter-spacing: .08em; }
+.commitment-timing-copy > span { color: #FFFFFF; font-size: 12px; font-weight: 700; letter-spacing: .12em; }
+.commitment-timing-copy h3 { margin: 7px 0 4px; color: #FFFFFF; font-size: 16px; line-height: 1.4; }
+.commitment-timing-copy p { margin: 0; color: #FFFFFF; font-size: 14px; line-height: 1.5; }
+.commitment-service-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.commitment-service { min-width: 0; padding: 17px; border: 1px solid #ffffff35; }
+.commitment-service > svg { margin-bottom: 12px; color: #FFCC00; }
+.commitment-service h3 { margin: 0 0 7px; color: #FFFFFF; font-size: 15px; line-height: 1.35; }
+.commitment-service p { margin: 0; color: #FFFFFF; font-size: 14px; line-height: 1.55; }
+.commitment-assurances { margin: 0; padding: 14px 0 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; border-top: 1px solid #ffffff35; list-style: none; }
+.commitment-assurances li { display: flex; align-items: flex-start; gap: 10px; color: #FFCC00; }
+.commitment-assurances li > svg { flex: 0 0 auto; margin-top: 2px; }
+.commitment-assurances li > span { display: flex; flex-direction: column; gap: 4px; }
+.commitment-assurances strong { color: #FFFFFF; font-size: 14px; line-height: 1.35; }
+.commitment-assurances small { color: #FFFFFF; font-size: 14px; line-height: 1.45; }
 .references-section { position: relative; margin-top: 0; padding: 48px 0 58px; }
 .references-section::before { content: ''; position: absolute; top: 0; left: 50%; width: min(1120px, 88%); height: 1px; background: linear-gradient(90deg,#FFCC00 0 54px,#E8EDF1 54px 100%); transform: translateX(-50%); }
 .references-heading-row { margin-top: 25px; margin-bottom: 24px; align-items: flex-end; }
@@ -328,6 +337,8 @@ main { overflow: hidden; }
 :focus-visible { outline: 3px solid #3399CC; outline-offset: 3px; }
 @media (max-width: 1180px) { .section-wrap,.intro-inner { margin-right: 6%; margin-left: 6%; } .commitment-layout { gap: 55px; } .contact-inner { gap: 60px; } }
 @media (min-width: 761px) and (max-width: 980px) {
+  .commitment-layout { grid-template-columns: 1fr; gap: 28px; }
+  .commitment-copy { max-width: 620px; }
   .intro-inner { grid-template-columns: 1fr; gap: 24px; padding: 30px 0; }
   .intro-copy { grid-template-columns: minmax(0,1fr); }
   .intro-stat { min-height: 90px; }
@@ -403,12 +414,18 @@ main { overflow: hidden; }
   .process-strip > a { min-height: 38px; margin-left: 46px; }
   .process-icon { width: 35px; height: 35px; }
   .commitment-layout { margin: 0; padding: 43px 6% 49px; grid-template-columns: 1fr; gap: 26px; }
-  .commitment-copy .section-topline { margin-bottom: 35px; }
+  .commitment-copy .section-topline { margin-bottom: 28px; }
   .commitment-copy h2 { font-size: 43px; }
-  .commitment-description { font-size: 11px; }
-  .commitment-list { padding-top: 0; }
-  .guarantee-row { grid-template-columns: 20px 35px 1fr; gap: 11px; }
-  .guarantee-row p { font-size: 10px; }
+  .commitment-intro { margin: 15px 0 18px; font-size: 14px; }
+  .commitment-details { gap: 12px; }
+  .commitment-timing { padding: 16px; gap: 15px; }
+  .commitment-timing-value strong { font-size: 54px; }
+  .commitment-timing-copy h3 { font-size: 15px; }
+  .commitment-timing-copy p,.commitment-service p { font-size: 14px; }
+  .commitment-service-grid { grid-template-columns: 1fr; gap: 9px; }
+  .commitment-service { padding: 15px; }
+  .commitment-service > svg { margin-bottom: 8px; }
+  .commitment-assurances { grid-template-columns: 1fr; gap: 12px; }
   .client-list { grid-template-columns: 1fr; }
   .client-list > div { min-height: 73px; padding: 13px 18px; border-right: 1px solid #E8EDF1; border-bottom: 1px solid #E8EDF1; border-left: 1px solid #E8EDF1; }
   .client-list > div:last-child { border-bottom: 0; }
