@@ -142,7 +142,7 @@ export function HydraulicsLanding() {
         <div className="contact-inner section-wrap">
           <div className="contact-copy"><p className="section-kicker">VOTRE PROCHAINE ÉTAPE</p><h2 id="contact-heading">Parlons de votre<br />exploitation.</h2><p>Une urgence, un besoin en flexibles ou un projet de maintenance ? Notre équipe est à votre écoute.</p><a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> +243 975 146 361</a><a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={15} aria-hidden="true" /> WhatsApp</a></div>
           <div className="contact-details">
-            <div><MapPin size={18} /><span><strong>Bureau de Lubumbashi</strong><small>MACKEN PICES S.A.R.L.<br />2479, Avenue Kilengwe, Quartier Gambela<br />Commune de Lubumbashi, Province du Haut-Katanga<br />République Démocratique du Congo</small><a className="map-directions-link" href="https://www.google.com/maps/search/?api=1&query=2479%2C%20Avenue%20Kilengwe%2C%20Quartier%20Gambela%2C%20Lubumbashi%2C%20Haut-Katanga%2C%20RDC" target="_blank" rel="noopener noreferrer">Itinéraire Google Maps <ArrowUpRight size={13} aria-hidden="true" /></a></span></div>
+            <div><MapPin size={18} /><span><strong>Bureau de Lubumbashi</strong><small>MACKEN PICES S.A.R.L.<br />2479, Avenue Kilengwe, Quartier Gambela<br />Commune de Lubumbashi, Province du Haut-Katanga<br />République Démocratique du Congo</small></span></div>
             <div><Clock3 size={18} /><span><strong>Urgence hydraulique</strong><small>Astreinte 24/7 sur les sites équipés d’un atelier.</small></span></div>
             <div><Wrench size={18} /><span><strong>Besoin d’un devis ?</strong><small>Appelez-nous pour décrire votre installation et vos contraintes.</small></span></div>
           </div>
@@ -152,7 +152,7 @@ export function HydraulicsLanding() {
 
       <footer className="site-footer">
         <div className="footer-inner"><BrandMark light /><p>Solutions hydrauliques industrielles<br />République Démocratique du Congo</p><a href="#accueil">Retour en haut <ArrowUpRight size={14} /></a></div>
-        <div className="footer-legal"><strong>MACKEN PICES S.A.R.L.</strong><span>2479, Avenue Kilengwe, Quartier Gambela, Commune de Lubumbashi, Province du Haut-Katanga, République Démocratique du Congo.</span><span>RCCM 15-B-3653 · ID Nat. 6-83-N95830E · NIF A1507563 N</span></div>
+        <div className="footer-legal"><span>RCCM 15-B-3653 · ID Nat. 6-83-N95830E · NIF A1507563 N</span></div>
         <div className="footer-bottom"><span>© {new Date().getFullYear()} Macken Pices S.A.R.L.</span><span>Engineering · Construction</span></div>
       </footer>
     </main>
