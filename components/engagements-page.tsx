@@ -205,7 +205,7 @@ function EngagementPillars() {
         {pillars.map(({ number, title, description, icon: Icon, href }) => (
           <a className="engagement-pillar" href={href} key={number}>
             <span className="engagement-pillar-icon"><Icon size={19} aria-hidden="true" /></span>
-            <span className="engagement-pillar-copy"><span className="engagement-pillar-number">{number} / ENGAGEMENT</span><strong>{title}</strong><span>{description}</span></span>
+            <span className="engagement-pillar-copy"><strong>{title}</strong><span>{description}</span></span>
             <ArrowUpRight className="engagement-pillar-arrow" size={16} aria-hidden="true" />
           </a>
         ))}
