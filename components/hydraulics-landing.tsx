@@ -19,7 +19,7 @@ const services = [
   { number: '01', category: 'ÉQUIPEMENTS', title: 'Flexibles & raccords', description: 'Tuyaux et composants sélectionnés selon votre installation, avec une traçabilité de bout en bout.', detail: 'Jusqu’à 600 bars selon référence', icon: Gauge },
   { number: '02', category: 'PROXIMITÉ', title: 'Atelier sur votre site', description: 'Un atelier équipé, un stock de composants critiques et une équipe Macken Pices dédiée, directement dans vos installations.', detail: 'Astreinte 24/7', icon: Wrench },
   { number: '03', category: 'PRÉVENTION', title: 'Audit & maintenance', description: 'Nous évaluons vos circuits, repérons les risques et organisons un plan de maintenance adapté à vos opérations.', detail: 'Rapport documenté', icon: ShieldCheck },
-  { number: '04', category: 'DISPONIBILITÉ', title: 'Stock à demeure', description: 'Les références critiques sont déjà sur place, dimensionnées à partir de vos consommations réelles.', detail: 'Lubumbashi & Kolwezi', icon: PackageCheck },
+  { number: '04', category: 'DISPONIBILITÉ', title: 'Stock à demeure', description: 'Les références critiques sont déjà sur place, dimensionnées à partir de vos consommations réelles.', detail: 'Sur site, Lubumbashi & Kolwezi', icon: PackageCheck },
 ]
 
 export function BrandMark({ light = false, homeHref = '#accueil' }: { light?: boolean; homeHref?: string }) {
