@@ -120,7 +120,7 @@ export function HydraulicsLanding() {
               <div className="commitment-timing-copy"><h3>Diagnostic et réparation démarrent en moins de 30 minutes.</h3><p>Sur les sites équipés de notre atelier.</p></div>
             </aside>
             <div className="commitment-service-grid">
-              <article className="commitment-service"><Factory size={20} aria-hidden="true" /><h3>Dispositif In-Situ</h3><p>Nos techniciens et pièces d’usure sont déjà intégrés à votre exploitation.</p></article>
+              <article className="commitment-service"><Factory size={20} aria-hidden="true" /><h3>Dispositif In-Situ</h3><p>Un atelier équipé, nos techniciens et les pièces d’usure sont déjà intégrés à votre exploitation.</p></article>
               <article className="commitment-service"><MapPin size={20} aria-hidden="true" /><h3>Couverture régionale</h3><p>Nos hubs de Lubumbashi et Kolwezi planifient et valident une intervention rapide selon un protocole logistique strict.</p></article>
             </div>
             <ul className="commitment-assurances" aria-label="Garanties complémentaires">
