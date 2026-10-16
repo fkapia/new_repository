@@ -331,9 +331,15 @@ main { overflow: hidden; }
 .contact-details > div > span { display: grid; gap: 5px; }
 .contact-details strong { color: #003366; font-size: 13px; }
 .contact-details small { color: #1A1A1A; font-size: 11px; line-height: 1.55; }
+.map-directions-link { display: inline-flex; width: fit-content; align-items: center; gap: 5px; margin-top: 5px; color: #003366; font-size: 11px; font-weight: 700; text-decoration: underline; text-decoration-color: #3399CC; text-underline-offset: 3px; }
+.map-directions-link:hover { color: #3399CC; }
+.map-directions-link:focus-visible { outline-color: #003366; }
 .contact-watermark { position: absolute; right: 1%; bottom: -72px; color: #E8EDF1; font-size: 280px; font-weight: 700; letter-spacing: -.12em; line-height: 1; pointer-events: none; }
 .site-footer { position: relative; padding: 23px 5.6% 0; border-top: 3px solid #FFCC00; background: #003366; color: #FFFFFF; }
 .footer-inner { max-width: 1120px; min-height: 76px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 25px; }
+.footer-legal { max-width: 1120px; margin: 0 auto; padding: 9px 0 14px; display: grid; gap: 4px; color: #FFFFFF; font-size: 10px; line-height: 1.6; }
+.footer-legal strong { color: #FFFFFF; font-size: 10px; letter-spacing: .04em; }
+.footer-legal span { color: #FFFFFF; }
 .brand-light { color: #fff; }
   .brand-light .brand-copy > span { color: #3399CC; }
 .footer-inner > p { margin: 0; color: #FFFFFF; font-size: 11px; line-height: 1.7; }
