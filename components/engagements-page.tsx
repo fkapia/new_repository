@@ -172,17 +172,15 @@ function EngagementHero() {
         </nav>
         <div className="engagement-hero-copy">
           <p className="engagement-eyebrow"><span /> NOTRE PROMESSE QUALITÉ</p>
-          <h1 id="engagement-title">Nos engagements :<br />la preuve à chaque flexible.</h1>
+          <h1 id="engagement-title">Contrôlé, tracé<br />et garanti.</h1>
           <p className="engagement-hero-lead">
-            Chaque flexible qui sort de notre atelier est documenté, testé et garanti. Traçabilité complète, épreuve de pression définie avec vous, garantie écrite et disponibilité 24/7 contractuellement garantie : la preuve accompagne la pièce.
+            Chaque flexible est documenté et vérifié avant livraison. Des engagements concrets, de l’atelier jusqu’à votre site.
           </p>
           <div className="engagement-hero-actions">
             <Link className="button button-yellow" href="/#contact">Demander un devis <ArrowRight size={16} /></Link>
-            <a className="button button-outline" href="tel:+243975146361"><Phone size={16} /> Urgence 24/7 : +243 975 146 361</a>
-            <a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={15} aria-hidden="true" /> WhatsApp</a>
+            <a className="button button-outline" href="tel:+243975146361" aria-label="Appeler l’assistance hydraulique au +243 975 146 361"><Phone size={16} /> Urgence 24/7</a>
           </div>
         </div>
-        <span className="engagement-hero-index" aria-hidden="true">MP / QUALITÉ</span>
       </div>
     </section>
   )
