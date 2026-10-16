@@ -582,16 +582,16 @@ main { overflow: hidden; }
 .engagement-page .site-header { border-bottom: 1px solid #E8EDF1; }
 .engagement-page .primary-nav a[aria-current='page'] { color: var(--navy); }
 .engagement-page .primary-nav a[aria-current='page']::after { display: block; width: 24px; height: 2px; margin: 5px auto 0; background: var(--yellow); content: ''; }
-.engagement-hero { position: relative; min-height: 390px; display: flex; align-items: center; overflow: hidden; background: var(--navy); color: #fff; }
-.engagement-hero-inner { position: relative; width: min(1120px,88%); margin: 0 auto; padding: 22px 0 34px; }
-.engagement-breadcrumb { display: flex; align-items: center; gap: 10px; margin-bottom: 28px; color: #ffffffb8; font-size: 12px; }
+.engagement-hero { position: relative; min-height: 280px; display: flex; align-items: center; overflow: hidden; background: var(--navy); color: #fff; }
+.engagement-hero-inner { position: relative; width: min(1120px,88%); margin: 0 auto; padding: 14px 0 20px; }
+.engagement-breadcrumb { display: flex; align-items: center; gap: 10px; margin-bottom: 18px; color: #ffffffb8; font-size: 12px; }
 .engagement-breadcrumb a { color: #fff; text-decoration: none; }
 .engagement-breadcrumb a:hover { color: var(--yellow); }
 .engagement-hero-copy { max-width: 740px; }
-.engagement-eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 14px; color: var(--yellow); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
+.engagement-eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 8px; color: var(--yellow); font-size: 11px; font-weight: 700; letter-spacing: .15em; }
 .engagement-eyebrow span { width: 22px; height: 2px; background: var(--yellow); }
-.engagement-hero h1 { margin: 0; color: #fff; font-size: clamp(40px,5.5vw,64px); font-weight: 650; letter-spacing: -.05em; line-height: 1.04; }
-.engagement-hero-lead { max-width: 600px; margin: 16px 0 22px; color: #ffffffdf; font-size: 16px; line-height: 1.55; }
+.engagement-hero h1 { margin: 0; color: #fff; font-size: clamp(38px,4.2vw,52px); font-weight: 650; letter-spacing: -.05em; line-height: 1.04; }
+.engagement-hero-lead { max-width: 600px; margin: 10px 0 14px; color: #ffffffdf; font-size: 16px; line-height: 1.5; }
 .engagement-hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
 .engagement-hero-actions .button { min-height: 48px; font-size: 14px; }
 .engagement-hero-actions .button svg { flex: 0 0 auto; }
