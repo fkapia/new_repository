@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import {
   ArrowRight,
@@ -167,15 +166,6 @@ function EngagementsHeader() {
 function EngagementHero() {
   return (
     <section className="engagement-hero" aria-labelledby="engagement-title">
-      <Image
-        src="/hydraulics-hero.png"
-        alt="Technicien Macken Pices contrôlant un circuit hydraulique sur un équipement minier."
-        fill
-        priority
-        sizes="100vw"
-        className="engagement-hero-image"
-      />
-      <div className="engagement-hero-overlay" aria-hidden="true" />
       <div className="engagement-hero-inner">
         <nav className="engagement-breadcrumb" aria-label="Fil d’Ariane">
           <Link href="/">Accueil</Link><span aria-hidden="true">/</span><span>Nos engagements</span>

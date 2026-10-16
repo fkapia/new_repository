@@ -582,11 +582,9 @@ main { overflow: hidden; }
 .engagement-page .site-header { border-bottom: 1px solid #E8EDF1; }
 .engagement-page .primary-nav a[aria-current='page'] { color: var(--navy); }
 .engagement-page .primary-nav a[aria-current='page']::after { display: block; width: 24px; height: 2px; margin: 5px auto 0; background: var(--yellow); content: ''; }
-.engagement-hero { position: relative; min-height: 560px; display: flex; align-items: center; isolation: isolate; overflow: hidden; background: var(--navy); color: #fff; }
-.engagement-hero-image { z-index: -3; object-fit: cover; object-position: 58% 43%; }
-.engagement-hero-overlay { position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg,rgba(0,35,68,.97) 0%,rgba(0,42,80,.91) 42%,rgba(0,42,80,.35) 76%,rgba(0,42,80,.16) 100%),linear-gradient(0deg,rgba(0,35,68,.54),transparent 50%); }
-.engagement-hero-inner { position: relative; width: min(1120px,88%); margin: 0 auto; padding: 34px 0 64px; }
-.engagement-breadcrumb { display: flex; align-items: center; gap: 10px; margin-bottom: 54px; color: #ffffffb8; font-size: 11px; }
+.engagement-hero { position: relative; min-height: 470px; display: flex; align-items: center; overflow: hidden; background: var(--navy); color: #fff; }
+.engagement-hero-inner { position: relative; width: min(1120px,88%); margin: 0 auto; padding: 26px 0 42px; }
+.engagement-breadcrumb { display: flex; align-items: center; gap: 10px; margin-bottom: 34px; color: #ffffffb8; font-size: 11px; }
 .engagement-breadcrumb a { color: #fff; text-decoration: none; }
 .engagement-breadcrumb a:hover { color: var(--yellow); }
 .engagement-hero-copy { max-width: 740px; }
@@ -688,11 +686,9 @@ main { overflow: hidden; }
   .engagement-page .primary-nav { width: auto; margin: 0; padding: 0; gap: 14px; overflow-x: auto; }
   .engagement-page .primary-nav a { font-size: 10px; }
   .engagement-page .primary-nav .nav-contact { display: none; }
-  .engagement-hero { min-height: 540px; align-items: flex-start; }
-  .engagement-hero-image { object-position: 63% center; }
-  .engagement-hero-overlay { background: linear-gradient(90deg,rgba(0,35,68,.94),rgba(0,42,80,.64)),linear-gradient(0deg,rgba(0,35,68,.64),transparent 76%); }
-  .engagement-hero-inner { width: 88%; padding: 24px 0 65px; }
-  .engagement-breadcrumb { margin-bottom: 44px; }
+.engagement-hero { min-height: 0; align-items: flex-start; }
+.engagement-hero-inner { width: 88%; padding: 24px 0 54px; }
+.engagement-breadcrumb { margin-bottom: 30px; }
   .engagement-hero h1 { font-size: clamp(38px,8vw,55px); }
   .engagement-hero-lead { max-width: 550px; font-size: 12px; }
   .engagement-hero-actions { align-items: flex-start; flex-direction: column; }
@@ -714,7 +710,7 @@ main { overflow: hidden; }
   .engagement-page .header-inner { flex-wrap: wrap; gap: 10px; padding-top: 12px; padding-bottom: 12px; }
   .engagement-page .primary-nav { width: 100%; justify-content: space-between; gap: 8px; }
   .engagement-page .primary-nav a { font-size: 9px; }
-  .engagement-hero { min-height: 580px; }
+  .engagement-hero-inner { padding-top: 20px; padding-bottom: 50px; }
   .engagement-hero h1 { font-size: clamp(35px,9vw,44px); }
   .engagement-hero-lead { font-size: 11px; }
   .engagement-hero-actions .button { min-height: 44px; padding: 0 13px; font-size: 10px; }
