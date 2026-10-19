@@ -150,7 +150,7 @@ export function ReferencesPage() {
               <div><dt>Notre expertise</dt><dd>Flexibles hydrauliques &amp; maintenance</dd></div>
               <div><dt>Cadre</dt><dd>Sous-traitance sous l’égide de l’ARSP</dd></div>
             </dl>
-            <Link className="reference-aside-link" href="/#contact">Parlons de votre site <ArrowRight size={16} /></Link>
+            <Link className="reference-aside-link" href="/#contact">Parlons de votre besoin <ArrowRight size={16} /></Link>
           </aside>
         </div>
       </section>
