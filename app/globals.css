@@ -508,7 +508,7 @@ main { overflow: hidden; }
 .reference-aside-label { margin: 0 0 8px; color: #3399CC; font-size: 9px; font-weight: 700; letter-spacing: .15em; }
 .reference-aside h2 { margin: 0 0 20px; color: var(--navy); font-size: 20px; letter-spacing: -.035em; }
 .reference-aside dl { margin: 0; }
-.reference-aside dl div { padding: 12px 0; border-top: 1px solid #E8EDF1; }
+.reference-aside dl div { padding: 12px 0; }
 .reference-aside dt { margin-bottom: 4px; color: #53565A; font-size: 9px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .reference-aside dd { margin: 0; color: #1A1A1A; font-size: 11px; line-height: 1.55; }
 .reference-aside-link { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 15px; padding-top: 14px; border-top: 1px solid #E8EDF1; color: var(--navy); font-size: 11px; font-weight: 700; text-decoration: none; }
