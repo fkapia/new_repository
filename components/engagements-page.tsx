@@ -152,10 +152,10 @@ function EngagementsHeader() {
         <div className="header-inner">
           <BrandMark homeHref="/" />
           <nav className="primary-nav" aria-label="Navigation principale">
-            <Link href="/#solutions">Solutions</Link>
-            <Link href="/engagements" aria-current="page">Nos engagements</Link>
-            <Link href="/references">Références</Link>
-            <Link className="nav-contact" href="/#contact">Parlons de votre site <ArrowUpRight size={15} /></Link>
+          <Link href="/#accueil">Accueil</Link>
+          <Link href="/engagements" aria-current="page">Nos engagements</Link>
+          <Link href="/references">Nos références</Link>
+          <Link className="nav-contact" href="/#contact">Parlons de votre besoin <ArrowUpRight size={15} /></Link>
           </nav>
         </div>
       </header>

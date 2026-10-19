@@ -53,11 +53,10 @@ function ReferenceHeader() {
       <div className="header-inner">
         <BrandMark homeHref="/" />
         <nav className="primary-nav" aria-label="Navigation principale">
-          <Link href="/">Accueil</Link>
-          <Link href="/#solutions">Solutions</Link>
+          <Link href="/#accueil">Accueil</Link>
           <Link href="/#engagements">Nos engagements</Link>
-          <Link href="/references" aria-current="page">Références</Link>
-          <Link className="nav-contact" href="/#contact">Parlons de votre site <ArrowUpRight size={15} /></Link>
+          <Link href="/references" aria-current="page">Nos références</Link>
+          <Link className="nav-contact" href="/#contact">Parlons de votre besoin <ArrowUpRight size={15} /></Link>
         </nav>
       </div>
     </header>

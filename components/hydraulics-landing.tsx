@@ -47,10 +47,10 @@ export function HydraulicsLanding() {
         <div className="header-inner">
           <BrandMark />
           <nav className="primary-nav" aria-label="Navigation principale">
-            <a href="#solutions">Solutions</a>
+            <a href="#accueil">Accueil</a>
             <a href="/engagements">Nos engagements</a>
-            <a href="/references">Références</a>
-            <a className="nav-contact" href="#contact">Parlons de votre site <ArrowUpRight size={15} /></a>
+            <a href="/references">Nos références</a>
+            <a className="nav-contact" href="#contact">Parlons de votre besoin <ArrowUpRight size={15} /></a>
           </nav>
         </div>
       </header>
