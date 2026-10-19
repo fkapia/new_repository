@@ -122,7 +122,7 @@ export function ReferencesPage() {
                 <div><p className="reference-kicker">FIABILITÉ &amp; PERFORMANCE</p><h2>La disponibilité comme exigence</h2></div>
               </div>
               <p>La prestation s’inscrit dans un environnement où la disponibilité technique des équipes et la réactivité sur les flexibles participent à la continuité des opérations. Les modalités d’intervention et les indicateurs de performance sont définis avec le périmètre du contrat et les exigences du site.</p>
-              <p>Le gabarit fourni indique que les contrats cadres de cette vague pouvaient s’étendre jusqu’à trois ans, généralement sous forme de périodes de 12 mois renouvelables après audit de performance.</p>
+              <p>Le contrat peut s’étendre jusqu’à trois ans sous forme de périodes de 12 mois renouvelables après audit de performance.</p>
               <blockquote className="reference-quote">
                 <p>« Il ne suffit pas d’avoir un contrat, il faut aussi le maintenir. Aujourd’hui, les entreprises minières font confiance aux sous-traitants congolais grâce aux efforts du chef de l’État. Il faut garder cette confiance et la maintenir le plus longtemps possible. »</p>
                 <cite>Directeur général de l’ARSP</cite>
