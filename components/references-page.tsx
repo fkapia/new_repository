@@ -110,7 +110,7 @@ export function ReferencesPage() {
               <ul className="reference-scope-list">
                 {contractScope.map((item) => <li key={item}><ShieldCheck size={18} aria-hidden="true" /><span>{item}</span></li>)}
               </ul>
-              <p>Des ateliers de sertissage fixes ou mobiles peuvent être installés directement sur site afin de rapprocher les équipements, les composants et l’équipe des opérations minières.</p>
+              <p>Des ateliers de sertissage fixes ou mobiles sont installés directement sur site afin de rapprocher les équipements, les composants et l’équipe des opérations minières.</p>
 
               <aside className="reference-highlight">
                 <span className="reference-highlight-icon"><Wrench size={20} aria-hidden="true" /></span>
