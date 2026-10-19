@@ -17,7 +17,7 @@ import {
 
 const services = [
   { number: '01', category: 'ÉQUIPEMENTS', title: 'Flexibles & raccords', description: 'Tuyaux et composants sélectionnés selon votre installation, avec une traçabilité de bout en bout.', detail: 'Jusqu’à 600 bars selon référence', icon: Gauge },
-  { number: '02', category: 'PROXIMITÉ', title: 'Atelier sur votre site', description: 'Un atelier équipé, un stock de composants critiques et une équipe Macken Pices dédiée, directement dans vos installations.', detail: 'Astreinte 24/7', icon: Wrench },
+  { number: '02', category: 'PROXIMITÉ', title: 'Atelier sur votre site', description: 'Un atelier, un stock de composants critiques et une équipe Macken Pices dédiée, directement dans vos installations.', detail: 'Astreinte 24/7', icon: Wrench },
   { number: '03', category: 'PRÉVENTION', title: 'Audit & maintenance', description: 'Nous évaluons vos circuits, repérons les risques et organisons un plan de maintenance adapté à vos opérations.', detail: 'Rapport documenté', icon: ShieldCheck },
   { number: '04', category: 'DISPONIBILITÉ', title: 'Stock à demeure', description: 'Les références critiques sont déjà sur place, dimensionnées à partir de vos consommations réelles.', detail: 'Sur site, Lubumbashi & Kolwezi', icon: PackageCheck },
 ]
@@ -110,7 +110,7 @@ export function HydraulicsLanding() {
           <div className="commitment-copy">
             <div className="section-topline section-topline-light"><span>NOS ENGAGEMENTS</span><span>La promesse, avec son périmètre</span></div>
             <h2 id="commitments-heading">De la réactivité.<br /><span>Sans raccourci.</span></h2>
-            <p className="commitment-intro">Une réponse adaptée à votre infrastructure : sur les sites équipés d’un atelier de sertissage dédié, déployé contractuellement en unit�� fixe ou mobile, le diagnostic et la réparation s’enclenchent en moins de 30 minutes. Pour les autres sites, l’intervention est coordonnée depuis nos bases régionales.</p>
+            <p className="commitment-intro">Une réponse adaptée à votre infrastructure : sur les sites équipés d’un atelier de sertissage dédié, déployé contractuellement en unit���� fixe ou mobile, le diagnostic et la réparation s’enclenchent en moins de 30 minutes. Pour les autres sites, l’intervention est coordonnée depuis nos bases régionales.</p>
             <a className="commitment-link" href="/engagements">Voir nos engagements détaillés <ArrowRight size={16} /></a>
           </div>
           <div className="commitment-details">
