@@ -62,7 +62,7 @@ export function HydraulicsLanding() {
           <h1 id="hero-heading" className="hero-heading-urgent">Arrêt hydraulique ?<br />Nous intervenons en <span>moins de 30 min</span>, votre production repart.</h1>
           <p className="hero-description">Des solutions sur mesure et une logistique de proximité pensées pour garantir la continuité de votre exploitation.</p>
           <div className="hero-actions">
-            <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appeler l’astreinte 24/7</a>
+            <a className="button button-yellow" href="tel:+243975146361"><Phone size={17} /> Appelez-nous maintenant</a>
             <a className="whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={15} aria-hidden="true" /> WhatsApp</a>
             <a className="button button-outline" href="#solutions">Découvrir nos solutions <ArrowDownRight size={17} /></a>
           </div>
@@ -110,7 +110,7 @@ export function HydraulicsLanding() {
           <div className="commitment-copy">
             <div className="section-topline section-topline-light"><span>NOS ENGAGEMENTS</span><span>La promesse, avec son périmètre</span></div>
             <h2 id="commitments-heading">De la réactivité.<br /><span>Sans raccourci.</span></h2>
-            <p className="commitment-intro">Une réponse adaptée à votre infrastructure : sur les sites équipés d’un atelier de sertissage dédié, déployé contractuellement en unité fixe ou mobile, le diagnostic et la réparation s’enclenchent en moins de 30 minutes. Pour les autres sites, l’intervention est coordonnée depuis nos bases régionales.</p>
+            <p className="commitment-intro">Une réponse adaptée à votre infrastructure : sur les sites équipés d’un atelier de sertissage dédié, déployé contractuellement en unit�� fixe ou mobile, le diagnostic et la réparation s’enclenchent en moins de 30 minutes. Pour les autres sites, l’intervention est coordonnée depuis nos bases régionales.</p>
             <a className="commitment-link" href="/engagements">Voir nos engagements détaillés <ArrowRight size={16} /></a>
           </div>
           <div className="commitment-details">
