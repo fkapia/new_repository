@@ -37,7 +37,7 @@ export function HydraulicsLanding() {
         <span className="availability-dot" aria-hidden="true" />
         <span>Assistance hydraulique</span>
         <span className="strip-divider" aria-hidden="true">/</span>
-        <a href="tel:+243975146361" aria-label="Appeler le +243 975 146 361">📞 Appeler</a>
+        <a className="strip-call-link" href="tel:+243975146361" aria-label="Appeler le +243 975 146 361"><Phone size={12} aria-hidden="true" /> Appeler</a>
         <span className="strip-divider" aria-hidden="true">·</span>
         <a className="strip-whatsapp-link" href="https://wa.me/243975146361" target="_blank" rel="noopener noreferrer" aria-label="Écrire sur WhatsApp au +243 975 146 361"><MessageCircle size={12} aria-hidden="true" /> WhatsApp</a>
         <span className="strip-location">Lubumbashi · Kolwezi</span>

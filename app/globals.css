@@ -178,6 +178,7 @@ a { color: inherit; }
 main { overflow: hidden; }
 .emergency-strip { min-height: 35px; padding: 0 5.6%; display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--navy-deep); color: #FFFFFF; font-size: 11px; letter-spacing: .045em; }
 .emergency-strip a { color: var(--yellow); font-weight: 700; text-decoration: none; }
+.emergency-strip .strip-call-link { display: inline-flex; align-items: center; gap: 4px; color: var(--yellow); }
 .emergency-strip .strip-whatsapp-link { display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border: 1px solid #43875D; border-radius: 999px; background: #153B29; color: #E5F4EA; font-size: 10px; letter-spacing: normal; text-decoration: none; transition: background-color 160ms ease, border-color 160ms ease; }
 .emergency-strip .strip-whatsapp-link:hover { border-color: #65A97B; background: #1D5137; }
 .whatsapp-link { display: inline-flex; width: fit-content; align-items: center; justify-content: center; gap: 6px; padding: 7px 11px; border: 1px solid #B8DFC5; border-radius: 999px; background: #EDF7F0; color: #176A3B; font-size: 12px; font-weight: 700; line-height: 1; text-decoration: none; transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease; }
