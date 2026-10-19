@@ -147,7 +147,7 @@ export function ReferencesPage() {
               <div><dt>Client</dt><dd>Kamoa Copper SA</dd></div>
               <div><dt>Activité</dt><dd>Mine de cuivre</dd></div>
               <div><dt>Localisation</dt><dd>Kamoa-Kakula, Lualaba</dd></div>
-              <div><dt>Expertise</dt><dd>Flexibles hydrauliques &amp; maintenance</dd></div>
+              <div><dt>Notre expertise</dt><dd>Flexibles hydrauliques &amp; maintenance</dd></div>
               <div><dt>Cadre</dt><dd>Sous-traitance sous l’égide de l’ARSP</dd></div>
             </dl>
             <Link className="reference-aside-link" href="/#contact">Parlons de votre site <ArrowRight size={16} /></Link>
