@@ -123,7 +123,7 @@ export function HydraulicsLanding() {
               <article className="commitment-service"><MapPin size={20} aria-hidden="true" /><h3>Couverture régionale</h3><p>Nos hubs de Lubumbashi et Kolwezi planifient et valident une intervention rapide selon un protocole logistique strict.</p></article>
             </div>
             <ul className="commitment-assurances" aria-label="Garanties complémentaires">
-              <li><Clock3 size={18} aria-hidden="true" /><span><strong>Disponibilité 24/7</strong><small>Sur les sites équipés d’un atelier.</small></span></li>
+              <li><Clock3 size={18} aria-hidden="true" /><span><strong>Disponibilité 24/7</strong><small>Sur les sites équipés de notre atelier.</small></span></li>
               <li><BadgeCheck size={18} aria-hidden="true" /><span><strong>Traçabilité documentée</strong><small>Composants conformes aux standards et documentation fournie.</small></span></li>
             </ul>
           </div>
