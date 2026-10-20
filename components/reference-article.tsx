@@ -136,7 +136,7 @@ function ContractArticle() {
             </blockquote>
             <p>Annabelle Oosthuizen, administratrice de Kamoa Copper, a également souligné la place de la chaîne d'approvisionnement et des entrepreneurs locaux dans le développement du secteur :</p>
             <blockquote>
-              <p>« Le domaine dans lequel les sociétés minières ont la possibilité de croître dans ce pays, c'est la chaîne d'approvisionnement. Les contrats que nous signons aujourd'hui sont des contrats d'une durée de 3 ans. Je suis contente de signer ce contrat avec ces entrepreneurs que je connais, qui vont participer au destin d'une mine qui a une durée de vie de 42 ans. Et même vos enfants pourront en bénéficier. »</p>
+              <p>« Les contrats que nous signons aujourd'hui sont des contrats d'une durée de 3 ans. Je suis contente de signer ce contrat avec ces entrepreneurs que je connais, qui vont participer au destin d'une mine qui a une durée de vie de 42 ans. Et même vos enfants pourront en bénéficier. »</p>
               <cite>Annabelle Oosthuizen — Administratrice, Kamoa Copper</cite>
             </blockquote>
             <p>Macken Pices s'inscrit dans cette dynamique aux côtés des acteurs miniers du Lualaba, avec un engagement constant : la performance technique, la conformité HSE et la fiabilité des interventions.</p>
