@@ -132,7 +132,7 @@ export function ReferencesPage() {
                 <span className="reference-section-number">03</span>
                 <div><p className="reference-kicker">SOUS-TRAITANCE CONGOLAISE</p><h2>Une confiance à faire durer</h2></div>
               </div>
-              <p>Cette signature s’inscrit dans une dynamique d’intégration des sous-traitants congolais au sein de la chaîne d’approvisionnement minière. Le gabarit indique que 22 entreprises congolaises ont signé cette vague de contrats. Pour Macken Pices, la confiance se construit dans la durée : par la qualité technique, la conformité aux exigences HSE du site et la fiabilité des interventions.</p>
+              <p>Cette signature s’inscrit dans une dynamique d’intégration des sous-traitants congolais au sein de la chaîne d’approvisionnement minière. Pour Macken Pices, la confiance se construit dans la durée : par la qualité technique, la conformité aux exigences HSE du site et la fiabilité des interventions.</p>
               <blockquote className="reference-quote">
                 <p>« Le domaine dans lequel les sociétés minières ont la possibilité de croître dans ce pays, c’est la chaîne d’approvisionnement. Les contrats que nous signons aujourd’hui sont des contrats d’une durée de 3 ans. Je suis contente de signer ce contrat avec ces entrepreneurs que je connais, qui vont participer au destin d’une mine qui a une durée de vie de 42 ans. »</p>
                 <cite>Annabelle Oosthuizen — Administratrice, Kamoa Copper</cite>
